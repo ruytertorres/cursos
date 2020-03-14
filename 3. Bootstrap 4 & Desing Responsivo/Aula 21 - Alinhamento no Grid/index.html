@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Titulo da Page-->
+     <title>Alinhamentos no Grid</title>
+     <!-- Estilo CSS -->
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" media="screen" href="css/estilo-personalizado.css">
+     <link rel="stylesheet" type="text/css" media="print" href="css/estilo-imprensão.css">
+     <!-- icone do topo -->
+     <link rel="shortcut icon" href="img/favicon.png" sizes="32x32" type="image/png">
+     <!-- iconic extesion-->
+     <link href="icons/iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+     <!-- Font Awesome extesion -->
+     <script src="https://kit.fontawesome.com/144f0ea399.js" crossorigin="anonymous"></script>
+     <!-- HTML 5 SHIV
+          <script src="js/html5shiv.min.js"></script> -->
+</head>
+<body>
+     <!-- Container Inicio -->
+     <div class="container-fluid marcador-container">
+          <!-- A class >container< define um container com area de escape
+
+          A class >> container-fluid << Define um conteiner se, area de escape -->
+
+          <h2>Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h2>
+          <div class="marcador-area espacamento row align-items-center">
+               <div class="col marcador">Área 1</div>
+               <div class="col marcador">Área 2</div>
+               <div class="col marcador">Área 3</div>
+          </div>
+
+          <h2>Alinhamento vertical individual (align-self-ALINHAMENTO: start, center, end)</h2>
+          <div class="marcador-area espacamento row">
+               <div class="col marcador align-self-start">Área 1</div>
+               <div class="col marcador align-self-center">Área 2</div>
+               <div class="col marcador align-self-end">Área 3</div>
+          </div>
+
+          <h2>Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)</h2>
+          <div class="marcador-area row justify-content-center">
+               <div class="marcador col-2 espacamento">Área 1</div>
+               <div class="marcador col-2 espacamento">Área 2</div>
+               <div class="marcador col-2 espacamento">Área 3</div>
+          </div>
+
+          <h2>Distribuição (justify-content-ALINHAMENTO: around, between)</h2>
+          <div class="marcador-area row justify-content-between">
+               <div class="marcador col-2 espacamento">Área 1</div>
+               <div class="marcador col-2 espacamento">Área 2</div>
+               <div class="marcador col-2 espacamento">Área 3</div>
+          </div>
+
+          <h2>Removendo espaçamento</h2>
+          <div class="marcador-area row no-gutters">
+               <div class="marcador col-2">Área 1</div>
+               <div class="marcador col-2">Área 2</div>
+               <div class="marcador col-2">Área 3</div>
+          </div>
+
+
+
+
+     </div><!--//Fim Container ->
+          
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               <!-- Inicio Config Bootstrap -->
+               <!-- Optional JavaScript -->
+               <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+               integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+          </script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+          // a popper.js é para utilizar conteudo que ficam a primeira vista ocultos
+     </script>
+     <script src="js/bootstrap.min.js"></script>
+     <!--//Fim Config Bootstrap -->
+</body>
+</html>

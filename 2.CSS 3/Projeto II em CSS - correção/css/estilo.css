@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	background: #9000FF;
+	font-size: 1em;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+
+/*
+***Layout***
+ */
+
+#area_cabecalho {
+
+background: #f7b600;
+padding: 15px;
+text-align: center;
+/*TEXT-ALING É PARA CENTRALIZAR O TEXTO
+SEUS RESPECTIVOS ATRIBUTOS, SÃO
+LEFT, CENTER, RIGHT, BOTTOM E TOP
+PODENDO USAR DOIS ATRIBUTOS DENTRO DA 
+MESMA PROPRIEDADE*/
+}
+
+#area_logo, #area_menu {
+
+padding: 10px;
+}
+
+#area_principal {
+
+padding: 15px;
+width: 920px;
+/*
+*920 px é uma resolução padrão para dispositivos
+modernos
+*800 px ou 720 px podedem ser usados
+em dispositivos antigo ou de acordo com
+sua preferencia de formatação
+ */
+margin: 0 auto;
+
+}
+
+#area_postagens {
+
+float: left;
+width: 660px;
+border:5px solid blue;
+
+}
+
+#area_lateral {
+
+float: right;
+width: 240px
+}
+
+.conteudo_lateral {
+
+background: #fff;
+padding: 10px;
+margin_bottom: 20px;
+}
+
+.postagem_lateral {
+
+font-size: 0.8em;
+padding: 5px;
+border-bottom: 1px dotted #ccc ;
+
+}
+
+.postagem {
+
+padding: 20px;
+margin-bottom: 20px;
+background: #fff;
+}
+
+.data_postagem {
+
+font-size: 0.8em;
+border-bottom: 1px solid #f4f4f4;
+padding-bottom: 10px;
+margin-bottom: 10px;
+display: block;
+
+}
+
+#rodape {
+
+background: #ccc;
+clear:both;
+text-align: center;
+padding: 15px;
+}
+
+/*
+***Formatação do Menu***
+ */
+
+a{
+
+text-decoration: none;
+
+}
+
+a:link, a:visited {
+
+color: #f7b600;
+}
+
+a:hover {
+
+text-decoration: underline;
+}
+#area_cabecalho a:link, #area_cabecalho a:visited {
+
+color: #fff;
+padding: 8px 12px;
+}
+
+#area_cabecalho a:hover {
+
+color: #F7b600;
+background: #fff;
+padding: 8px 12px;
+text-decoration: none;
+}
+
+/*
+***Formatações Gerais***
+ */
+
+h1 {
+
+color: #4e4e4e;
+font-size: 2.5em;
+}
+
+.white {
+
+color: #fff;
+}
+
+h2 {
+
+color: #f7b600; 
+}
+
+h3 {
+
+color: #565656;
+background: #ccc;
+padding: 5px;
+}

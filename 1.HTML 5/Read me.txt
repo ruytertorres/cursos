@@ -1,0 +1,2 @@
+DA aula 5 - Degrades em HTML em diante são de HTML Avançado ja conhecimento de CSS entre outros fundamentos inportantes.
+Anterior a isso é apenas praticas iniciais em HTML exclusivamente.

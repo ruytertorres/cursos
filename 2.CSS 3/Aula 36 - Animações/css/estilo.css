@@ -1,0 +1,161 @@
+* {
+
+     margin:0;
+     padding:0;
+}   
+
+/*  */
+/* *** LEMBRAR DE COLOCAR AS EXTENSÕES PARA OS NAVEGADORES ANTIGOS EM TODAS AS DIRETIZES ENVOLVENTES DA ANIMAÇÃO CSS
+
+-O- -MOZ- -WEBKIT-
+
+*** */
+/*  */
+
+/* *** Animações *** */
+
+#box {
+
+     width: 80px;
+     height: 80px;
+     background: rgba(238, 255, 0, 0.37);
+     margin: 10px;
+     border-radius: 200px;
+     position:relative;
+     animation-name: animacao_box;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     /* animation-delay: 3s; */
+}
+
+@keyframes animacao_box {
+
+     from {
+          background: rgba(238, 255, 0, 0.37);
+          border-radius:0px;
+          top: 0;
+          left:0;}
+          to {
+          background: rgba(255, 0, 0, 0.37) ;
+          border-radius:200px;
+          top:0;
+          left:800px;
+          }
+     }
+     
+#box1 {
+
+     width: 80px;
+     height: 80px;
+     background: rgba(255, 0, 0, 0.37);
+     margin: 10px;
+     border-radius: 200px;
+     position:relative;
+     /* animation-name: animacao_box1;
+     animation-duration: 5s;
+     ** animation-delay: 3s; ** 
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     */
+
+     animation: animacao_box1 5s infinite alternate;
+}
+
+@keyframes animacao_box1 {
+
+
+     from {
+          background: rgba(255, 0, 0, 0.37);
+          border-radius: 0px;
+          top:0px;
+          left:800px;
+     }
+
+     to {
+          background: rgba(21, 255, 0, 0.37);
+          border-radius: 200px;
+          top: 0px;
+          left: 0px;
+     }
+}
+     
+#box2 {
+
+     width: 80px;
+     height: 80px;
+     background: rgba(21, 255, 0, 0.37);
+     margin: 10px;
+     border-radius: 200px;
+     position:relative;
+     animation: animacao_box2 5s infinite;
+}
+
+@keyframes animacao_box2 {
+
+
+     0%{
+          background: rgba(21, 255, 0, 0.37);
+          border-radius: 0px;
+          top: 0px;
+          left: 0px;
+     }
+     25% {
+          background: rgba(255, 0, 157, 0.37);
+          border-radius: 200px;
+          top: 0px;
+          left: 800px;
+     }
+     50% {
+          background: rgba(21, 255, 0, 0.37);
+          border-radius: 0px;
+          top: 100px;
+          left: 800px;
+     }
+     75%{
+          background: rgba(255, 0, 157, 0.37);
+          border-radius: 200px;
+          top: 100px;
+          left: 0px;
+     }
+     100% {
+          background: rgba(21, 255, 0, 0.37);
+          border-radius: 0px;
+          top: 0px;
+          left: 0px;
+     }
+}
+
+#box3 {
+
+     width: 80px;
+     height: 80px;
+     background: rgba(255, 0, 157, 0.37);
+     margin: 10px;
+     border-radius: 200px;
+     position:relative;
+     animation: animacao_box3 5s infinite alternate;
+}
+
+@keyframes animacao_box3 {
+
+
+     from {
+          background: rgba(255, 0, 157, 0.37);
+          border-radius: 0px;
+          top: 0px;
+          left: 0px;
+     }
+
+     to {
+          background: rgba(238, 255, 0, 0.37);
+          border-radius: 200px;
+          top: 250px;
+          left: 0px;
+     }
+}
+
+body {
+
+     background: #000;
+}

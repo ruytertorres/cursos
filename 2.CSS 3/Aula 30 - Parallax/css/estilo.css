@@ -1,0 +1,104 @@
+* {
+
+     /* padding: 0;
+     margin: 0; */
+}
+
+/* *** *** */
+body, html, #container {
+     
+     margin: 0;
+     font: 16px "lato", sans-serif;
+     color: #777;
+     height: 100%;     
+}
+
+.conteudo {
+
+     color: #777;
+     background-color: #fff;
+     text-align: justify;
+     padding: 50px 80px;
+}
+
+h1 {
+
+     text-transform: uppercase;
+     color:#111;
+     text-align: center;
+}
+
+p {
+     
+     margin-bottom:20px;
+}
+
+/* 
+(((( *** EFEITO PARALLAX *** )))) 
+*/
+
+#box1, #box2, #box3, #box4 {
+
+     position: relative;
+     height: 100%;
+     opacity: 0.7;
+     /* As medidas do opacity vai de 0 onde a opaciade é total
+     ate 1 onde a opacidade é nenhum
+     ex: 0 - 0.1 - 0.4 - 0.9 - 1 */
+     background-repeat: no-repeat;
+     background-size: cover /*100%*/;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+#box1 {
+     
+     background-image: url('../img/imagem1.jpg');
+     
+}
+
+#box2 {
+     
+     background-image: url('../img/imagem2.jpg')
+}
+
+#box3 {
+
+     background-image: url('../img/imagem3.jpg')
+}
+
+#box4 {
+
+     background-image: url('../img/imagem4.jpg')
+}
+
+/* *** *** */
+
+#boxaling {
+     
+     position: absolute;
+     top: 42%;
+     width: 100%;
+     text-align: center;
+     background: #ff000044;    
+     
+}
+
+#borderdiv {
+     
+     display:inline;
+     background: #2e2c2c;
+     padding: 20px;
+     letter-spacing: 5px;
+}
+
+
+#message {
+     
+     display:inline;
+     border: 2px solid #cccccc99;
+     padding: 5px;
+     color: #f0e2e2;
+     text-transform: uppercase;
+     font-size: 20px;
+}

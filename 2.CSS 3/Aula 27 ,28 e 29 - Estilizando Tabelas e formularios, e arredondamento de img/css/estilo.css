@@ -1,0 +1,332 @@
+* {
+
+     padding:0;
+     margin:0;
+}
+
+body {
+
+     font-family: "Trebuchet MS", Helvetica, sans-serif;
+     background: #ffeadb  url('../img/coluna3.png') repeat-y;
+     font-size: 1em;
+}
+
+#container {
+     width: 1290px ;/*1366*/
+     margin: 0 auto;
+     background: #ffffff96;
+}
+
+#marca {
+
+     height: 200px;
+     background: #225992 url('../img/cabecalho2.jpg') no-repeat center;
+     text-align:center;
+     line-height: 200px;
+}
+
+#conteudo {
+
+     width: 958px;
+     float:right;
+     line-height: 1.5em;
+}
+
+#centro {
+    
+     float: left;
+     padding:0px;
+}
+
+#conteudo_centro {
+     
+     background:#a121213a;
+     width: 638px;
+     float: left;
+     padding:10px;
+}
+
+h3+img {
+
+     width: 97%;
+     border:2px solid #ffffff96;
+
+}
+
+
+#direita {
+
+     width: 275px;
+     float: right;
+     background: #a1212196;
+     margin-left:25px
+}
+
+#nav {
+
+     width:305px;
+     float:left;
+     padding-bottom:20px;
+     background: #a1212196;
+}
+
+#rodape {
+
+     clear:both;
+     border-top: 2px solid #a12;
+     background: #91021a;
+     text-align: center;
+}
+
+#rodape a, #roadape a:visited {
+     
+     color: #fff; 
+}
+
+#rodape a:hover {
+     
+     color: #ffd586 ;
+     text-decoration: underline;
+}
+
+/* 
+******
+ */
+
+#texto {
+     
+     padding-bottom: 20px;
+     padding-left: 10px;
+}
+
+#nav ul {
+
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+}
+
+p {
+     
+     padding-top: 10px;
+}
+
+#nav ul a {
+
+     width: 200px;
+     height: 40px;
+     display: block;
+     background: url("../img/menu.png") no-repeat left bottom;
+     color: #fff;
+     text-decoration: none;
+     text-indent: 40px;
+     line-height: 40px;
+}
+
+#nav a:hover {
+
+     background-position: right bottom;
+     color: #680028;
+}
+
+
+#marca h1 {
+     
+     color: #a12121;
+     text-shadow: 5px 10px 3px #f571a3;
+}
+
+#conteudo_direito {
+     
+     padding:10px;
+}
+
+#conteudo_centro {
+     
+     background: #a121213a;
+     padding: 10px;
+}
+
+h2 {
+
+     background: #f9946b;
+     padding-bottom:15px;
+     padding-left: 10px;
+     line-height: 1.6em;
+     color: #fff;
+     text-decoration: underline;
+}
+
+h3 {
+     
+     padding: 15px 0px 30px;
+     color: #ce014f
+}
+
+a:link, a:visited {
+
+     color:#6800289c;
+     text-decoration:none;
+}
+
+a:hover {
+
+     color:#a12;
+     text-decoration:underline;
+
+}
+
+/* *** table *** */
+
+table#center {
+     
+     width: 637px;
+}
+
+table#center th, table#center td {
+     
+    padding: 7px;
+    border-collapse: separate; 
+    
+/*nessa função border colapse, voce tem duas opções basicas de atributos
+     sendo eles a "colapse" quando asbordas da tabela se fudem, tornando-se uma tabela padrão
+     ou a separate, quand ela se torna uma tabela estilizada */
+}
+
+table#center th {
+     
+/* *** */ text-transform:uppercase;  /* *** */
+     border-top: 3px solid #a149;
+     border-bottom: 3px solid #a12121;
+     font-size: 0.9em;
+     letter-spacing: 0.2em;
+}
+
+tr.alternado {
+     
+     background: #a1494949;
+}
+
+tr:hover {
+     
+     background: #a14;
+     color: #ffffff;
+}
+
+.align_right {
+     
+     text-align: right;
+}
+
+/* *** form *** */
+
+fieldset {
+
+     padding: 1em;
+     margin:1em 0;
+     border: 1px solid #f9946b99;
+     background: #ffffff99;
+}
+
+legend {
+
+     font-weight: bold;
+}
+
+label {
+
+     display: block;
+     cursor: pointer;/*  esse elemento muda o estilo do cusor */
+}
+
+input [type="text"] {
+
+     width: 90%;
+}
+
+textarea {
+
+     width: 90%;
+     height: 200px;
+}
+
+#margin-bottom-messagem {
+
+     margin-bottom: 0.5em;
+}
+
+#sim, #nao {
+
+     margin-left:  1em;
+}
+
+/* *** Caixa de texto arrendondada utilizando imagem como borda e fundo *** */
+
+.box {
+     
+     width: 400px;
+     background: #dedede url('../img/topo.png') no-repeat left top;
+}
+
+.box h4 {
+
+     padding: 20px 20px 0 20px;
+
+}
+
+.box .ultimo {
+     
+     width:400px ;
+     height:24px ;
+     background: url('../img/baixo.png') no-repeat left bottom;
+}
+
+
+.box p {
+
+     padding: 0px 15px;
+     margin-bottom: 0;
+}
+
+.box2 {
+     
+     width: 400px;
+     background: #dedede url('../img/fundo-arredondamento.png') repeat-y;
+}
+
+.box2 h4 {
+     
+     padding: 20px 20px 0 20px;
+     background: url('../img/topo2.png') no-repeat left top;
+}
+
+
+.box2 .ultimo2 {
+     
+     padding-bottom: 20px;
+     background: url('../img/baixo2.png') no-repeat left bottom;
+}
+
+.box2 p {
+     
+     padding: 0 15px;
+}
+
+hr {
+     
+     margin: 10px 0;
+     width: 398px;
+     border-style:dotted;
+     color: #a1212196 ;
+}
+
+
+/* #img {
+
+     width: 60%;
+     overflow: hidden; 
+
+*** Essa popriedade acima oculta todo o conteudo
+que quebra a div  ***
+
+} */

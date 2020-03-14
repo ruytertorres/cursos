@@ -1,0 +1,88 @@
+* {
+
+	padding: 0;
+	margin: 0;
+}
+
+body {
+
+	background: url('../img/fundo_azul.png');
+	margin: 30px;
+}
+
+h2 {
+
+	padding-bottom: 15px;
+	color: #FFF;
+}
+
+ul {
+
+     margin: 0;
+     padding: 0;
+     list-style:none;
+     width:720px;
+     background: #159cb0 url('../img/fundo-horizontal.png') repeat-x;
+     float:left;
+}
+
+ul li {
+
+     float: left;
+}
+
+ul a {
+
+     display: block;
+     padding: 0 2em;
+     line-height:2em;
+     text-decoration: none;
+     color: #fff;
+     background: url('../img/divisor.png') repeat-y left top;
+}
+
+ul .primeiro a {
+
+     background:none;
+}
+
+ul a:hover {
+
+     color: #085662;
+     background:#44cade
+}
+
+#home #area_menu #navegacao .home a,
+#series #area_menu #navegacao .series a,
+#filmes #area_menu #navegacao .filmes a {
+
+     color: #085662;
+     background:#44cade
+
+}
+
+#clear {
+
+          clear:both;
+}
+
+#principal {
+
+     width: 720px;
+     background: #ffffffa2;
+     margin-top: 20px;
+}
+
+h3 {
+
+     color: #fff;
+     text-align: center;
+     padding: 15px;
+     font-size:2em;
+     text-decoration: underline; 
+}
+
+p {
+
+     padding: 10px;
+}

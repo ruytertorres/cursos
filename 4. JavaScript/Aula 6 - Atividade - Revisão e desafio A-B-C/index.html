@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <!-- Meta tags Obrigatórias Bootstrap -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- CSS -->
+     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+     <!-- icone do topo -->
+     <link rel="shortcut icon" href="img/favicon.png" sizes="32x32" type="image/png">
+     <!-- Font Awesome extesion -->
+     <script src="https://kit.fontawesome.com/144f0ea399.js" crossorigin="anonymous"></script>
+     <!-- HTML 5 SHIV -->
+     <script src="js/html5shiv.js"></script>
+     <!-- Tiulo da Page -->
+     <title>Atividade</title>
+</head>
+
+<body>
+     <!-- Inicio container -->
+     <div class="container">
+          <!-- inicio Cabecalho -->
+          <header>
+               <a href="page2.html" class="btn btn-block btn-primary btn-radius">Ex.: II</a>
+          <!--//Fim Cabecalho -->
+          </header>
+          <!-- Inicio Conteudo Principal -->
+          <article>
+               <h1 class="text-primary mt-4">Curso de JavaScript, Aula VI - Revisão de desafio A-B-C (Inversão de Valores) </h1>
+               <div><!-- script -->
+                    <script src="js/scriptone.js"></script>     
+               </div><!--//script -->
+               <div>
+                    <h2 class="text-primary">// Lógica de inversão dos valores <br></h2>
+                    
+                    <h4>parte 1 da Atividade</h4>
+                    <p>
+                         var a = 10 <br>
+                         var b = 20<br>
+                         var c = null<br><br>
+
+                         document.write("A- " + a)<br>
+                         document.write("B- " + b)<br>
+                         document.write("C- " + c) <br><hr>
+                    </p>
+               </div>
+               <div><!-- script -->
+                    <script>
+                         // 
+
+                         var a = 10
+                         var b = 20
+                         var c = null
+
+                         document.write("A- " + a + "<br>")
+                         document.write("B- " + b + "<br>")
+                         document.write("C- " + c + "<br>")
+                         document.write("<hr> ")
+
+                    </script> <!--//script -->  
+                    <br> 
+                    <p>
+                         //  O Browser está lendo o padrão a-b-c inicial, ou seja, 'a' vale 10, 'b' vale 20 e 'c' vale null
+                    </p>
+                    <p>
+                         c = a // como o 'c' é uma memoria de alocação, ou seja vazia, a partir desse momento ele assume o valor de "a", e só a partir desse momento, 'c' = "a ininical" = 10 <br>
+                         a = b // Nesse momento o "a" assume o valor de "b inicial" e passa a valer 20, sem alterar o momento anterior de "a" que o "c" assumiu, e então nesse momento 'c' = "a inicial" = 10, e o "a atual" = "b inicial" = 20 <br>
+                         b = c // Nesse momento o "b" assume o valor do "c atual"= "a inicial"= 10, e "b atual passa a valer 10", lembrando que só a partir desse momento <br>
+                         c = null /* e por fim o "c" que alocou o momento inicial de "a" e passou a valer 10, nesse momento sobre escreve o valor do "a" inicial por null, e passa a partir desse momento a valer null. <br>
+                         portanto o "c" passa a ter valores diferentes em momentos diferentes:
+                    </p>
+                    <p>
+                         C Inicial = Null (no primeiro momento) <br>
+                         C Intermediario = 10 (No momento Médio dessa lógica) <br>
+                         C Atual = Null */     
+                    </p>
+                    
+                    <h4>parte 2</h4>
+                    <p>
+
+                         c = a<br>
+                         a = b<br>
+                         b = c <br>
+                         c = null<br><br>
+                         
+                         document.write("A- " + a)<br>
+                         document.write("B- " + b)<br>
+                         document.write("C- " + c) <br> <hr>
+               </div>
+               <script>
+                    // 
+                    var a = 10
+                    var b = 20
+                    var c = null
+                    // 
+                    c = a
+                    a = b
+                    b = c 
+                    c = null
+                    
+                    document.write("A- " + a + "<br>")
+                    document.write("B- " + b + "<br>")
+                    document.write("C- " + c + "<br>")
+                    document.write("<hr> ")
+
+               </script> <!--//script -->  
+          <!--//Fim conteudo Principal -->
+          </article>
+          <!-- Inicio Footer -->
+          <footer>
+
+          <!--//Fim footer  -->
+          </footer>
+          <!--//Fim Container -->
+     </div>
+
+     <!-- ===================================================================================================-->
+     <!-- Configurações do Bootstrap referente a JS -->
+     <!-- JavaScript (Opcional) -->
+     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+     </script>
+     <script src="js/bootstrap.min.js">
+     </script>
+</body>
+
+</html>

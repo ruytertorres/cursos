@@ -1,0 +1,88 @@
+/* ***** DOCUMENTO PADRRÃO DE FORMATAÇÃO DE BRAAKPOINTS (SITE OFICIAL BOOTSTRAP ***** */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+     body {background:rgba(0, 255, 21, 0.418);}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+     body {background: blue;}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+     body {background: violet;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+     body {background: greenyellow;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+     body {background: rgba(170, 17, 35, 0.527)}
+}
+
+/* ********************************************************************************* */
+
+/*                                   ***** MIN-WIDTH *****                                  */
+
+/* Small Devices (landscape phones, menor que 767px, padrão 576px) */
+
+@media (min-width: 576px) {
+
+     body {}
+}
+
+/* Medium Devices (Tablets, 768px e superior) */
+
+@media (min-width: 768px) {
+
+     body {}
+}
+
+/* Large Devices (desktops, 992px e superior) */
+
+@media (min-width: 992px) {
+
+     body {}
+}
+
+/* Extra Large Devices (large desktops, 1200px e superior) */
+
+@media (min-width: 1200px) {
+
+     body {}
+}
+
+@media (min-width: 1500px) {
+
+     /* body {
+
+          background: rgba(255, 94, 0, 0.527);
+     } */
+}
+
+/* ********************************************************************************* */
+/*                                   ***** MAX-WIDTH *****                                  */
+
+/* Extra Small Devices (Portraint phones) */
+
+@media (max-width: 575.98px) {
+
+     body {}
+}
+
+/* Small Devices (landscape phones) */
+
+@media (max-width: 767px) {}
+
+/* Medium Devices (Tablets, 768px e superior) */
+
+@media (max-width: 991px) {}
+
+/* Large Devices (desktops, 992px e superior) */
+
+@media (max-width: 1119px) {}

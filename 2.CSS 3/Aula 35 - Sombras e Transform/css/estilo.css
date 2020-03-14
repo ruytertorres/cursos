@@ -1,0 +1,138 @@
+* {
+
+     margin:0;
+     padding:0;
+}   
+
+/* *** Cabeçalho *** */
+
+
+
+/* *** Sombras *** */
+#box {
+
+     width: 280px;
+     height: 280px;
+     background:#ff22ff;
+     padding: 10px;
+     margin: 40px 50px 0 10px;
+     border-radius: 0px 160px 0 0;
+     float: left;
+}
+
+#box h1 {
+
+     color: #fff;
+     text-shadow: 20px 20px 5px rgba( 0, 0, 0, 0.5);
+     /* o 1º Parametro faz a sombra movientar na horizontal
+     
+     0 2º na vertical
+     
+     e o 3º (nesse exemplo o valor não está configurado) da a dureza da sombra
+     
+     o 4º é a cor
+     
+     Valor negativo (-40, -100) movimenta a sombra para a esquerda do objeto
+     
+     
+     SEPARAR 2 OU MAIS CONJUNTO DE PARAMETROS POR UMA VIRGULA FAZ COM QUE TENHA 2 SOMBRAS*/
+     
+     /* Lembrar das extensõs para navegadores antigos como o -webkit-; -moz- ; -o-; */
+}
+
+
+#box1 {
+
+     width: 280px;
+     height: 280px;
+     padding: 10px;
+     margin: 40px;
+     border-radius: 0px 160px 0 0;
+     float: left;
+     box-shadow: -5px -5px 0 6px #a22b33, -10px -10px 0 13px rgba(19,200200,0), -15px -15px 0 20px rgba(138, 43, 226, 0.4);
+
+     /* No caso do BOX-SHADOW ainda cabe mais um parametro Veja */
+}
+
+#box2 {
+
+     width: 280px;
+     height: 280px;
+     border: 5px solid #000 ;
+     padding: 10px;
+     margin: 40px;
+     border-radius: 0px 160px 0 0;
+     float: left;
+     box-shadow: -5px -5px 30px 5px #f99a99 inset, -10px -10px 0px 10px #aaa333 inset, -5px -5px 3px #bb4411;
+}
+
+#rbox {
+
+     width: 280px;
+     height: 280px;
+     border: 5px solid #000;
+     padding: 10px;
+     margin: 40px;
+     border-radius: 160px 0 0 0;
+     float: right;
+     transform: rotate(30deg);
+     margin-right: 60px;
+}
+
+#rbox1 {
+
+     width: 280px;
+     height: 280px;
+     border: 5px solid #000;
+     padding: 10px;
+     margin: 40px;
+     border-radius: 160px 0 0 0;
+     float: right;
+     transform: skew(0deg,20deg)
+}
+
+#rbox2 {
+
+     width: 280px;
+     height: 280px;
+     border: 5px solid #000 ;
+     padding: 10px;
+     margin: 40px;
+     border-radius: 160px 0 0 0;
+     float: right;
+     transform:scale(20deg,0deg)
+}
+
+#rbox3 {
+
+     width: 280px;
+     height: 280px;
+     border: 5px solid #000;
+     padding: 10px;
+     margin: 40px;
+     border-radius: 160px 0 0 0;
+     float: right;
+     transform: matrix(0, 2, 5, 1, 4)
+}
+
+#transform h1 {
+
+     color: #fff;
+     background: #000;
+     margin-left: 50px;
+     border-radius: 10px 0;
+     padding-left: 10px;
+}
+/* ***  *** */
+
+.img {
+
+     border-radius: 150px 20px 80px 55px;
+}
+
+/* *** DEGRADES *** */
+
+.clear {
+
+     clear:both;
+}

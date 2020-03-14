@@ -1,0 +1,154 @@
+* {
+
+     margin:0;
+     padding:0;
+}   
+
+/* *** Cabeçalho *** */
+
+
+
+/* ***  *** */
+#box {
+
+     width: 280px;
+     height: 280px;
+     background: url('../img/camera.png')no-repeat center left;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 0px 160px;
+     float: left;
+     
+}
+
+#box h1 {
+
+     background: rgba(199, 13, 13, 0.8);
+     border-radius: 0 40px 0 0;
+     width: 180px;
+     margin-left: 10px;
+     padding: 5px;
+     color: rgba(255, 255, 255);
+}
+
+#box p {
+
+     background: rgba(199, 13, 13, 0.8);
+     border-radius: 0 40px 0 40px;
+     margin: 0 10px 0 50px;
+     padding: 5px 5px 5px 20px;
+     color: rgba(255, 255, 255);
+}
+
+#box1 {
+
+     width: 280px;
+     height: 280px;
+     background: url('../img/camera.png');
+     padding: 10px;
+     margin: 10px auto;
+     border-radius: 0px 160px;
+     float: left;
+}
+
+#box1 h1 {
+
+     background: linear-gradient(to top, rgba(199, 13, 13, 0.8), #c941a0);
+     border-radius: 0 40px 0 0;
+     width: 180px;
+     margin-left: 10px;
+     padding: 5px;
+     color: rgba(255, 255, 255);
+     font-size: 1.4em;
+}
+
+#box1 p {
+     background: linear-gradient(135deg, rgba(199, 13, 13, 0.8), orange, #c941a0);
+
+/* Como os exp a cima mostram, o background: linear-gradient da para fazer com ele diversas combinações, apesar de ainda ter que usar o (("-o-;-moz;-kitweb-")) para ter comatibiidade com navegadores antigos. Entre as combinações estão as com ((2 ou mais cores idependente da linguagem)), alem de poder usar gradient dentro dessas cores. Ainda possui um metodo de variação que pode ser usado com os "atributos"
+
+((to top; to bottom, to left ou to rigth;))
+ou se não por radianos como por exemplo usar ((80deg, 120deg, 230deg, etc..))
+
+*/
+
+     border-radius: 0 40px 0 40px;
+     margin: 0 10px 0 50px;
+     padding: 5px 5px 5px 20px;
+     color: rgba(255, 255, 255)
+}
+
+#box2 {
+
+     width: 280px;
+     height: 280px;
+     background: url('../img/camera.png');
+     padding: 10px;
+     margin: 10px;
+     border-radius: 0px 160px;
+     float: left;
+}
+
+#box2 h1 {
+
+     background: radial-gradient(rgba(199, 13, 13, 0.8), #c941a0);
+     border-radius: 0 40px 0 0;
+     width: 180px;
+     font-size: 1.6em;
+     margin-left: 10px;
+     padding: 5px;
+     color: rgba(255, 255, 255);
+}
+
+#box2 p {
+     background: radial-gradient(rgba(199, 13, 13, 0.8), orange, #c941a0);
+     border-radius: 0 40px 0 40px;
+     margin: 0 10px 0 50px;
+     padding: 5px 5px 5px 20px;
+     color: rgba(255, 255, 255);
+}
+
+#box3 {
+
+     width: 280px;
+     height: 280px;
+     background: url('../img/camera.png');
+     padding: 10px;
+     margin: 10px;
+     border-radius: 0px 160px;
+     float: left;
+}
+
+#box3 h1 {
+
+     background: radial-gradient(rgba(199, 13, 13, 0.8) 40%, green 50%, #c941a0 10%);
+     border-radius: 0
+      40px 0 0;
+     width: 180px;
+     margin-left: 10px;
+     padding: 5px;
+     color: rgba(255, 255, 255);
+     font-size: 1.1em;
+}
+
+#box3 p {
+     background: radial-gradient(circle, rgba(199, 13, 13, 0.8) 55%, #c941a0 45%);
+     border-radius: 0 40px 0 40px;
+     margin: 0 10px 0 50px;
+     padding: 5px 5px 5px 20px;
+     color: rgba(255, 255, 255);
+}
+
+/* ***  *** */
+
+.img {
+
+     border-radius: 150px 20px 80px 55px;
+}
+
+/* *** DEGRADES *** */
+
+.clear {
+
+     clear:both;
+}

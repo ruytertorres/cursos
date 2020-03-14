@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Titulo da Page-->
+     <title>Comandos Terminal Windows</title>
+     <!-- Estilo CSS -->
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <!-- icone -->
+     <link rel="shortcut icon" href="img/favicon.png" sizes="32x32" type="image/png">
+     <!-- HTML 5 SHIV
+          <script src="js/html5shiv.min.js"></script> -->
+          <!-- CSS ISS -->
+          <style type="text/css">
+               body {
+                    width: 920px; background:#a305ff41; color:#fff;
+               }
+               #conteudo {
+                    Background: #e0e0e0;
+                    border: 3px solid #cccccc;
+                    border-radius: 20px;
+                    width:90%;
+               }
+               #bg-conteudo-estilizado {
+                    background: #000000;
+                    width:90%;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+               }
+               nav {
+                    margin-left: -35px;
+               }
+               nav ul li {
+                    background: linear-gradient(to top, #000, rgba(75, 6, 14, 0.685) 50%);
+                    float:left;
+                    text-align: center;
+                    list-style: none;
+               }
+               nav ul li:hover {
+                    background: linear-gradient(to bottom, #000, rgba(75, 6, 14, 0.685) 50%);
+               }
+               a {
+                    float:left;
+                    width: 160px;
+               }
+               a:link, a:visited {
+                    color: #fff;
+               }
+          </style>
+     </head>
+     <body id="comum" class=" m-auto p-4">
+          <div id="container">
+               <!-- Inicio Container -->
+               <div id="conteudo" class="">
+                    <h1 class="py-3 text-center">Comandos Terminal Windows</h1>
+                    <section id="bg-conteudo-estilizado" class="text-monospace pl-1" >
+                         -------------------------------------------------------- <br>
+                         >><strong>Importante</strong><br>
+                         --------------------------------------------------------<br><br>     
+                         <p>
+                              Para fazer uma pesquisa sobre comando no terminal do window digite: <strong>get-help * (ou get-help * > c:/users/nome/exemple)</strong>, depois de achar o comando especifico digite. <br>
+                              <strong>get-help comando ou get-help comando example (get-help comando; get-help comando example > c:/caminho)</strong> <br><br>
+                              >>EX.: get-help ni <br> 
+                              >><strong>Resultado</strong>
+                              <span>NOME <br>
+                                   New-Item <br><br>
+                                   SINOPSE<br>
+                                   Cria um novo item.<br><br>
+                                   SINTAXE <br>
+                                   New-Item [-Path] <string[]> [-Credential <PSCredential>] [-Force] [-ItemType <string>] [-
+                                   Value <Object>] [-Confirm] [-WhatIf] [-UseTransaction] [&lt;CommonParameters>]
+                                   <br><br>          
+                                   New-Item -Name <string> [[-Path] <string[]>] [-Credential <PSCredential>] [-Force] [-Item
+                                   Type <string>] [-Value <Object>] [-Confirm] [-WhatIf] [-UseTransaction] [
+                                   &lt;CommonParameter s>]
+                                           <br><br>                 
+                                   DESCRIÇÃO <br>
+                                   O cmdlet New-Item cria um novo item e define seu valor. Os tipos
+                                   de itens que podem ser c
+                                   riados dependem do local do item. Por exemplo, no sistema de
+                                   arquivos, New-Item é usado p
+                                   ara criar arquivos e pastas. No Registro, New-Item cria entradas
+                                   e chaves do Registro.
+                                   <br><br>
+                                   New-Item também pode definir o valor dos itens criados por ele.
+                                   Por exemplo, ao criar um
+                                   novo arquivo, New-Item pode adicionar conteúdo inicial ao
+                                   arquivo.
+                                   <br><br>
+                                   LINKS RELACIONADOS <br>
+                                   Online version: http://go.microsoft.com/fwlink/?LinkID=113353 <br>
+                                   about_Providers <br>
+                                   Get-Item <br>
+                                   Set-Item <br>
+                                   Remove-Item <br>
+                                   Clear-Item <br>
+                                   Invoke-Item <br>
+                                   Rename-Item <br>
+                                   Move-Item <br>
+                                   Copy-Item <br> <br>
+                                   COMENTÁRIOS <br>
+                                   >>Para ver os exemplos, digite: "<strong>get-help New-Item -examples</strong>". <br>
+                                   >>Para obter mais informações, digite: " <STRONG>get-help New-Item
+                                   -detailed</STRONG> ". <br>
+                                   >>Para obter informações técnicas, digite: " <strong>get-help New-Item
+                                   -full</strong> ".
+                                   </span>
+                              </p> <br>
+                              -------------------------------------------------------- <br>
+                              >><strong>Dicas</strong><br>
+                              --------------------------------------------------------<br><br>
+                              <p>
+                                   >> Quando for digitar o caminho de uma pasta ou arquivo que tiver um espaço no seu nome (Ex.: c:/user/nome/desktop/<strong>exemplo de nome</strong>), usa-se as <i>aspas simples</i> <strong>'...'</strong> para acessar o arquivo no fim do caminho, ficando: <br> <br>
+                                   'c:/user/nome/desktop/<strong>exemplo de nome</strong>' <br> <br>
+
+                                   >> para ver o conteudo dentro do comando <strong>tree</strong> usa-se o parametro <strong>/f</strong>, ficando: tree /f
+                              </p> <br>
+                              -------------------------------------------------------- <br>
+                              >><strong>Comandos de Pesquisa</strong><br>
+                              --------------------------------------------------------<br><br>
+                              <strong>chdir ou cd</strong> – navega ate a pasta destino <br>
+                              <strong>cls</strong> – Limpa a tela do terminal (não excui nenhum arquivo) <br>
+                              <strong>comando /?</strong> – o "/?" detalha as especificidades do comando que você está pretendendo usar (caso você tenha duvidas sobre a funcionaidade do comando) <br>
+                              <strong>Dir</strong> – Mostra tudo o que está dentro da pasta que você está <br>
+                              <strong>Dir c:/users</strong> – Ao unir o comando dir com o caminho do arquivo/pasta que você deseja setalhar. Ele o detalha automaticamente <br>
+                              <strong>Dir a/:d (ou dir a/:expecificidade)</strong> – filtra o resultado da sua pesquisa. No caso exibindo apenas os diretorios (as pastas)<br>
+                              <strong>Dir a/:-d </strong> – Mostra todos os arquivos dentro do diretorio selecionado menos outros diretorios filhos do diretorio selecionado<br>
+                              <strong>Dir a/:h </strong> – Para visualizar arquivos ocultos <br>
+                              <strong>Dir a/:r</strong> – Mostra os arquivos que são somente leitura <br>
+                              <strong>Dir /b</strong> – Mostra uma lista basica dos conteudos dentro do diretorio selecionado <br>
+                              <strong>Dir /l</strong> – Mostra todos os arquivos armaenados dentro do diretorio em letras minusculas <br>
+                              <strong>Dir /w</strong> – Mostra os arquivos dentro do diretorio selecionado em colunas <br>
+                              <strong>Dir /-c</strong> – Mostra os tamanhos dos arquivos dentro do diretorio sem o separador de milhar <br>
+                              <strong>Comando > resultado.txt (Dir > resultado.txt) </strong> – Prepara uma lista em documento de texto com o resultado da sua pesquisa <br>
+                              <strong>Tree</strong> – Exibe a arvore de pastas e subpastas que você quer observar <br>
+                              <strong>*</strong> – O * é uma tecla curinga, ela permite que você localize varios arquivos quando associado a ela (Ex.: c:/wamp/www/cursos/3.css/*.html ; c:/users/cliente/download/x*) <br>
+                              <strong>?</strong> – O ? é uma tecla curinga, ela permite que você localize varios arquivos quando associado a ela (Ex.: c:/wamp/www/cursos/? ; c:/users/cliente/download/?video) <br>
+                              <strong>ctrl+c</strong> – Cancela o comando dado (se der tempo) <br>
+                              <strong>></strong> – serve para exportar o comando para um arwuivo externo (EX.: c:/wamp/www/cursos tree > tree.txt) <br>  
+                              <strong>>></strong> – serve para exportar comando para um arquivo externo adicional para arquivo ja criado (EX.: c:/wamp/www/cursos tree > tree.txt) <br>  <br>
+                              -------------------------------------------------------- <br>
+                              >><strong>Comandos de Manipulação de diretorios (Pastas)</strong><br>
+                              --------------------------------------------------------<br><br>
+                              <strong>MKDIR ou MD</strong> – Para criar pasta <br>
+                              <strong>move</strong> – Para mover pasta (ex.: move pasta1/abc/012 abc/013)<br>
+                              <strong>rename ou ren</strong> – Para renomear pasta<br>
+                              <strong>rmdir</strong> – Para apagar pasta<br>
+                              <strong>xcopy</strong> – Para copiar pasta<br>
+                              <strong>del ou erase</strong> – Para deletar pasta ou arquivos<br><br>
+                              -------------------------------------------------------- <br>
+                              >><strong>Outros Comandos</strong><br>
+                              --------------------------------------------------------<br>
+                              <iframe src="texto/comando.txt" frameborder="1" width="693" height="645" style="background:#fff;"></iframe>
+                    </section>
+               </div>
+          </div><!--//Fim Container -->
+     <!-- Inicio Config Bootstrap -->
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+     // a popper.js é para utilizar conteudo que ficam a primeira vista ocultos
+     </script>
+     <script src="js/bootstrap.min.js"></script>
+     <!--//Fim Config Bootstrap -->
+</body>
+</html>

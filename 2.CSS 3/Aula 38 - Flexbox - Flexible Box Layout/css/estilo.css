@@ -1,0 +1,178 @@
+* {
+     margin:0;
+     padding:0;
+}   
+/*  */
+/* *** LEMBRAR DE COLOCAR AS EXTENSÕES PARA OS NAVEGADORES ANTIGOS EM TODAS AS DIRETIZES ENVOLVENTES DA ANIMAÇÃO CSS
+-O- -MOZ- -WEBKIT-
+*** */
+/* links e cabeçalho*/
+span {
+     display: inline-block;
+     margin-bottom: 10px;
+}
+a {
+     font-size: 1.3em;
+}
+a:link, a:visited {
+     color:#0ccc00 ;
+     background: #999ccc67;
+}
+a:hover {
+     color:#a12;
+     background: rgba(0, 0, 0, 0.274);
+}
+h1 {
+     background: rgba(238, 255, 0, 0.37);
+     -webkit-box-shadow: 0 0 5px #abba00, 0 0 10px #aa1221;
+     box-shadow: 0 0 5px #abba00, 0 0 10px #aa1221;
+     display: -webkit-inline-box;
+     display: -ms-inline-flexbox;
+     display: inline-flex;
+     margin: 20px;
+     padding: 0 10px;
+}
+/* *** Flexbox => flex-direction | flex-wrap | justify-content | align-itens *** */
+#conteudo {
+     background: #ccc;
+     height: 420px;
+     border: 1px solid #ccc;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+     -ms-flex-direction: row;
+     flex-direction: row;
+     /* row | row-reverse | column | column-reverse  */
+     -ms-flex-wrap: wrap ;
+     flex-wrap: wrap ;
+     /* nowrap | wrap | wrap-reverse */
+     /* o "nowrap"esse atributo faz com que os objetos dentro do container não sejam quebrados caso o layout venha a diminuir */
+     /* o "wrap" ele ajusta os itens dentro do conteiner sem deforma-los, caso haja uma diminuição de layout */
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     /* flex-start | flex-end | center | space-between | space-around */
+     -webkit-box-align: center ;
+     -ms-flex-align: center ;
+     align-items: center ;
+     /* stretch | center | flex-start | flex-end | baseline */
+}
+.box {
+     width:80px;
+     height: 80px;
+     margin:2px;
+     background: #fff;
+     border:2px solid #999ccc;     
+}
+/* flex-grow ex1 e order */
+.conteudo {
+     background: rgba(170, 17, 35, 0.281);
+     height: 200px;
+     border: 1px solid #ccc;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-flex: 0;
+     -ms-flex-positive: 0;
+     flex-grow: 0;
+     /* define a proporção de espaço ocupado por um item */
+}
+.conteudo div.radius {
+     border-radius: 200px;
+}
+.item_grow {
+     -webkit-box-flex: 1;
+     -ms-flex-positive: 1;
+     flex-grow: 1;
+     /* define a proporção de espaço ocupado por um item */
+}
+.box2 {
+     width: 80px;
+     height: 80px;
+     margin: 2px;
+     background: #fff;
+     border: 2px solid #999ccc;
+}
+#ordem_a {
+     -webkit-box-ordinal-group: 3;
+     -ms-flex-order: 2;
+     order: 2;
+}
+#ordem_b {
+     -webkit-box-ordinal-group: 2;
+     -ms-flex-order: 1;
+     order: 1;
+}
+#ordem_c {
+     -webkit-box-ordinal-group: 5;
+     -ms-flex-order: 4;
+     order: 4;
+}
+#ordem_d {
+     -webkit-box-ordinal-group: 4;
+     -ms-flex-order: 3;
+     order: 3;
+}
+/* ex 2 */
+.item_grow_x {
+     -webkit-box-flex: 2;
+     -ms-flex-positive: 2;
+     flex-grow: 2;
+     /* define a proporção de espaço ocupado por um item */
+}
+/* ex 3 */
+#conteudo2 {
+     background: rgba(170, 17, 35, 0.281);
+     height: 200px;
+     border: 1px solid #ccc;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     /* define a proporção de espaço ocupado por um item */
+}
+.grow {
+     -webkit-box-flex: 1;
+     -ms-flex-positive: 1;
+     flex-grow: 1;
+}
+#conteudo2 .radius {
+     border-radius: 200px;
+}
+/* flex-shrink */
+.conteudopage3 {
+     background: rgba(0, 255, 191, 0.219);
+     max-width: 700px;
+     height: 420px;
+     border: 1px solid #ccc;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     /* Define a capacidade de tamanho de redução do intem */
+}
+.boxpage3 {
+     height: 250px;
+     margin: 2px;
+     background: #fff;
+     border: 2px solid #999ccc;
+     -ms-flex-preferred-size: 250px;
+     flex-basis: 250px;
+     /* o flex-basis tem uma função parecida com o do width ou height, ele define um valor inicial para o item antes das outras prpriedades flex modificar o valor*/
+}
+#item_shrink1 {
+     -ms-flex-negative: 1;
+     flex-shrink: 1;
+}
+#item_shrink2 {
+     -ms-flex-negative: 2;
+     flex-shrink: 2;
+}
+#item_shrink3 {
+     -ms-flex-negative: 3;
+     flex-shrink: 3;
+}
+#item_shrink4 {
+     -ms-flex-negative: 4;
+     flex-shrink: 4;
+}

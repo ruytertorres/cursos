@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Titulo da Page-->
+     <title>Tabelas e Paginação</title>
+     <!-- Estilo CSS -->
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" media="screen" href="css/estilo-personalizado.css">
+     <link rel="stylesheet" type="text/css" media="print" href="css/estilo-imprensão.css">
+     <!-- icone -->
+     <link rel="shortcut icon" href="img/favicon.png" sizes="32x32" type="image/png">
+     <!-- HTML 5 SHIV
+          <script src="js/html5shiv.min.js"></script> -->
+</head>
+<body style="margin-bottom: 200px;padding: 16px;">
+     
+     <div id="container">
+
+             <h2>Tabelas: table</h2>
+             <table class="table">
+                  <thead>
+               <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                       <tr>
+                            <th>#</th>
+                            <th>Produto</th>
+                            <th>Marca</th>
+                            <th>Preço</th>
+                       </tr>
+                  </thead>
+
+                  <tbody>
+                       <tr>
+                            <td>00001</td>
+                            <td>Iphone X</td>
+                            <td>Apple</td>
+                            <td>R$ 6.999</td>
+                       </tr>
+                       <tr>
+                            <td>00002</td>
+                            <td>Nexus 5</td>
+                            <td>LG</td>
+                            <td>R$ 999</td>
+                       </tr>
+                       <tr>
+                            <td>00003</td>
+                            <td>Notebook VAIO</td>
+                            <td>Sony</td>
+                            <td>R$ 1.999</td>
+                       </tr>
+                  </tbody>
+
+             </table>
+
+             <h2>Tabela escura: table-dark</h2>
+               <table class="table table-dark">
+                                                              <thead>
+               <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                       <tr>
+                            <th>#</th>
+                            <th>Produto</th>
+                            <th>Marca</th>
+                            <th>Preço</th>
+                       </tr>
+                  </thead>
+
+                  <tbody>
+                       <tr>
+                            <td>00001</td>
+                            <td>Iphone X</td>
+                            <td>Apple</td>
+                            <td>R$ 6.999</td>
+                       </tr>
+                       <tr>
+                            <td>00002</td>
+                            <td>Nexus 5</td>
+                            <td>LG</td>
+                            <td>R$ 999</td>
+                       </tr>
+                       <tr>
+                            <td>00003</td>
+                            <td>Notebook VAIO</td>
+                            <td>Sony</td>
+                            <td>R$ 1.999</td>
+                       </tr>
+                  </tbody>
+
+             </table>
+
+
+             <h2>Tabela com cabeçalho escuro: thead-dark</h2>
+               <table class="table">
+                    <thead class="thead-dark">
+                         <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                         <tr>
+                              <th>#</th>
+                              <th>Produto</th>
+                              <th>Marca</th>
+                              <th>Preço</th>
+                         </tr>
+                    </thead>
+               
+                    <tbody>
+                         <tr>
+                              <td>00001</td>
+                              <td>Iphone X</td>
+                              <td>Apple</td>
+                              <td>R$ 6.999</td>
+                         </tr>
+                         <tr>
+                              <td>00002</td>
+                              <td>Nexus 5</td>
+                              <td>LG</td>
+                              <td>R$ 999</td>
+                         </tr>
+                         <tr>
+                              <td>00003</td>
+                              <td>Notebook VAIO</td>
+                              <td>Sony</td>
+                              <td>R$ 1.999</td>
+                         </tr>
+                    </tbody>
+               
+               </table>
+
+             <h2>Tabela com formatações: table-striped,
+                  table-bordered, table-borderless</h2>
+               <table class="table table-borderless">
+                    <thead>
+                         <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                         <tr>
+                              <th>#</th>
+                              <th>Produto</th>
+                              <th>Marca</th>
+                              <th>Preço</th>
+                         </tr>
+                    </thead>
+               
+                    <tbody>
+                         <tr>
+                              <td>00001</td>
+                              <td>Iphone X</td>
+                              <td>Apple</td>
+                              <td>R$ 6.999</td>
+                         </tr>
+                         <tr>
+                              <td>00002</td>
+                              <td>Nexus 5</td>
+                              <td>LG</td>
+                              <td>R$ 999</td>
+                         </tr>
+                         <tr>
+                              <td>00003</td>
+                              <td>Notebook VAIO</td>
+                              <td>Sony</td>
+                              <td>R$ 1.999</td>
+                         </tr>
+                    </tbody>
+               
+               </table>
+                    <table class="table table-striped table-bordered">
+                         <thead>
+                              <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                              <tr>
+                                   <th>#</th>
+                                   <th>Produto</th>
+                                   <th>Marca</th>
+                                   <th>Preço</th>
+                              </tr>
+                         </thead>
+                    
+                         <tbody>
+                              <tr>
+                                   <td>00001</td>
+                                   <td>Iphone X</td>
+                                   <td>Apple</td>
+                                   <td>R$ 6.999</td>
+                              </tr>
+                              <tr>
+                                   <td>00002</td>
+                                   <td>Nexus 5</td>
+                                   <td>LG</td>
+                                   <td>R$ 999</td>
+                              </tr>
+                              <tr>
+                                   <td>00003</td>
+                                   <td>Notebook VAIO</td>
+                                   <td>Sony</td>
+                                   <td>R$ 1.999</td>
+                              </tr>
+                         </tbody>
+                    
+                    </table>
+               <table class="table table-bordered">
+                    <thead>
+                         <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                         <tr>
+                              <th>#</th>
+                              <th>Produto</th>
+                              <th>Marca</th>
+                              <th>Preço</th>
+                         </tr>
+                    </thead>
+               
+                    <tbody>
+                         <tr>
+                              <td>00001</td>
+                              <td>Iphone X</td>
+                              <td>Apple</td>
+                              <td>R$ 6.999</td>
+                         </tr>
+                         <tr>
+                              <td>00002</td>
+                              <td>Nexus 5</td>
+                              <td>LG</td>
+                              <td>R$ 999</td>
+                         </tr>
+                         <tr>
+                              <td>00003</td>
+                              <td>Notebook VAIO</td>
+                              <td>Sony</td>
+                              <td>R$ 1.999</td>
+                         </tr>
+                    </tbody>
+               
+               </table>
+
+
+             <h2>Classes contextuais: table-success, table-danger, table...</h2>
+               <table class="table">
+                    <thead>
+                         <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                         <tr class="table-primary">
+                              <th>#</th>
+                              <th>Produto</th>
+                              <th>Marca</th>
+                              <th>Preço</th>
+                         </tr>
+                    </thead>
+               
+                    <tbody>
+                         <tr class="table-danger">
+                              <td>00001</td>
+                              <td>Iphone X</td>
+                              <td>Apple</td>
+                              <td>R$ 6.999</td>
+                         </tr>
+                         <tr>
+                              <td>00002</td>
+                              <td>Nexus 5</td>
+                              <td>LG</td>
+                              <td>R$ 999</td>
+                         </tr>
+                         <tr>
+                              <td>00003</td>
+                              <td>Notebook VAIO</td>
+                              <td>Sony</td>
+                              <td>R$ 1.999</td>
+                         </tr>
+                    </tbody>
+               
+               </table>
+
+             <h2>Tabela pequena: table-sm</h2>
+               <table class="table table-sm">
+                    <thead>
+                         <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                         <tr>
+                              <th>#</th>
+                              <th>Produto</th>
+                              <th>Marca</th>
+                              <th>Preço</th>
+                         </tr>
+                    </thead>
+               
+                    <tbody>
+                         <tr>
+                              <td>00001</td>
+                              <td>Iphone X</td>
+                              <td>Apple</td>
+                              <td>R$ 6.999</td>
+                         </tr>
+                         <tr>
+                              <td>00002</td>
+                              <td>Nexus 5</td>
+                              <td>LG</td>
+                              <td>R$ 999</td>
+                         </tr>
+                         <tr>
+                              <td>00003</td>
+                              <td>Notebook VAIO</td>
+                              <td>Sony</td>
+                              <td>R$ 1.999</td>
+                         </tr>
+                    </tbody>
+               
+               </table>
+
+
+             <h2>Tabela responsiva: table-responsive</h2>
+               <section class="table-responsive">
+                    <table class="table table-dark">
+                         <thead>
+                              <!-- As tags THEAD, TBODY e TFOOT que servem para configurar melhor a tabela, o THEAD usado para pre definir a cabeça da tabela enquanto o TBODY é usado para definir o corpo, ja o TFOOT define o rodapé da tabela (ou totalizadores)  -->
+                              <tr>
+                                   <th>#</th>
+                                   <th>Produto</th>
+                                   <th>Marca</th>
+                                   <th>Preço</th>
+                                   <th>Descrtion</th>
+                              </tr>
+                         </thead>
+                    
+                         <tbody>
+                              <tr class="table-danger">
+                                   <td>00001</td>
+                                   <td>Iphone X</td>
+                                   <td>Apple</td>
+                                   <td>R$ 6.999</td>
+                                   <td>Lorem</td>
+                              </tr>
+                              <tr>
+                                   <td>00002</td>
+                                   <td>Nexus 5</td>
+                                   <td>LG</td>
+                                   <td>R$ 999</td>
+                                   <td>Lorem</td>
+
+                              </tr>
+                              <tr>
+                                   <td>00003</td>
+                                   <td>Notebook VAIO</td>
+                                   <td>Sony</td>
+                                   <td>R$ 1.999</td>
+                                   <td>Lorem</td>
+                              </tr>
+                         </tbody>
+                    
+                    </table>
+               </section>
+
+             <h2>Paginação: pagination, page-item, page-link - active, disabled</h2>
+             <nav>
+                  <ul class="pagination">
+                       <li class="page-item">
+                            <a href="" class="page-link bg-success">Anterior</a>
+                       </li>
+                       <li class="page-item active">
+                            <a href="" class="page-link bg-success">1</a>
+                       </li>
+                       <li class="page-item disabled">
+                            <a href="" class="page-link bg-success">2</a>
+                       </li>
+                       <li class="page-item">
+                            <a href="" class="page-link bg-success">3</a>
+                       </li>
+                       <li class="page-item">
+                            <a href="" class="page-link bg-success">Próximo</a>
+                       </li>
+                  </ul>
+             </nav>
+
+             <h2>Alinhamento: justify-content-ALINHAMENTO(center, end) </h2>
+               <nav>
+                    <ul class="pagination justify-content-center">
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success">Anterior</a>
+                         </li>
+                         <li class="page-item active">
+                              <a href="" class="page-link bg-success">1</a>
+                         </li>
+                         <li class="page-item disabled">
+                              <a href="" class="page-link bg-success">2</a>
+                         </li>
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success">3</a>
+                         </li>
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success">Próximo</a>
+                         </li>
+                    </ul>
+               </nav>
+
+             <h2>Tamanho: pagination-TAMANHO(sm, lg) </h2>
+               <nav>
+                    <ul class="pagination pagination-sm justify-content-end">
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success">Anterior</a>
+                         </li>
+                         <li class="page-item active">
+                              <a href="" class="page-link bg-success">1</a>
+                         </li>
+                         <li class="page-item disabled">
+                              <a href="" class="page-link bg-success">2</a>
+                         </li>
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success">3</a>
+                         </li>
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success">Próximo</a>
+                         </li>
+                    </ul>
+               </nav>
+
+             <h2>Setas </h2>
+               <nav>
+                    <ul class="pagination pagination-lg">
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success"><span>&laquo;</span><span class="sr-only">Anterior</span></a>
+                         </li>
+                         <li class="page-item active">
+                              <a href="" class="page-link bg-success">1</a>
+                         </li>
+                         <li class="page-item disabled">
+                              <a href="" class="page-link bg-success">2</a>
+                         </li>
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success">3</a>
+                         </li>
+                         <li class="page-item">
+                              <a href="" class="page-link bg-success"><span>&raquo;</span><span class="sr-only">Próximo</span></a>
+                         </li>
+                    </ul>
+               </nav>
+               
+     </div><!--//Fim Container <-->
+          
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               <!-- Inicio Config Bootstrap -->
+               <!-- Optional JavaScript -->
+               <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+               integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+          </script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+          // a popper.js é para utilizar conteudo que ficam a primeira vista ocultos
+     </script>
+     <script src="js/bootstrap.min.js"></script>
+     <!--//Fim Config Bootstrap -->
+</body>
+</html>

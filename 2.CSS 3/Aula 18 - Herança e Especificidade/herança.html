@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Herança e Especificidade CSS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<div class="page">
+		<h2 class="blue" id="red">Especificidades CSS</h2>
+
+		<ol>
+			<li>
+				<p>
+					Quando houver 2 seletores iguais, sempre o ultimo sera aplicado. a exeção é quando se aplica o atributo (!important), pois então o atributo marcado sera priorizado, tornando-o mais importante que seu gemeo, porem é um recurso que deve ser <strong>evitado.</strong> <br>
+					<img src="img/Screenshot_2.png" alt="">
+				</p>
+			</li>
+			<li>
+				<p>
+					Se um seletor for mais especifico que outro, logo ele tera sua formatação priorizada. um exemplo disso é quando você define um tipo de <i>fonte</i> para todo o documento, mas dentro de um titulo ou paragrafo, você usa outro tipo de fonte. No geral os <strong>seletores</strong> tendem a fluir como no exemplo abaixo.<br>
+					<img src="img/Screenshot_1.png" alt="">
+				</p>
+			</li>
+	</div>
+	
+</body>
+</html>

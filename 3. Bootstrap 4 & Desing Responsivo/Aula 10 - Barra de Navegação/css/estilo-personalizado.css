@@ -1,0 +1,21 @@
+a:link, a:visited, a:active {
+
+     color:#ccc
+}
+
+a:hover {
+
+     color: #36e478
+}
+
+.dark a:link,
+.dark a:visited,
+.dark a:active {
+
+     color: #000;
+}
+
+.dark a:hover {
+
+     color: #36e478
+}

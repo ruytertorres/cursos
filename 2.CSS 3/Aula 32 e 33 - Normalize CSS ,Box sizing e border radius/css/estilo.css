@@ -1,0 +1,60 @@
+* {
+
+     margin:0;
+     padding:0;
+}   
+
+/* *** Cabeçalho *** */
+
+
+
+/* ***  *** */
+#box {
+
+     width: 300px;
+     height: 300px;
+     background: #b9c941;
+     padding: 10px;
+     margin: 10px auto;
+     border-radius: 200px;
+}
+
+#box1 {
+
+     width: 300px;
+     height: 300px;
+     background: #b9c941;
+     padding: 10px;
+     margin: 10px auto;
+     border-radius: 10px 200px;
+     -webkit-border-radius: 10px 200px;
+     -moz-border-radius: 10px 200px;
+}
+
+#box2 {
+
+     width: 300px;
+     height: 300px;
+     background: #c941a0;
+     padding: 10px 50px;
+     margin: 10px auto;
+     box-sizing:border-box ;
+     -moz-box-sizing:border-box;
+     -webkit-box-sizing:border-box;
+/* Ao utilizar a propriedade boz-sizing com o valor border-box, ela não conta o padding como tamanho da caixa*/
+}
+
+#box3 {
+
+     width: 300px;
+     height: 300px;
+     background: #c941a0;
+     padding: 50px;
+     margin: 10px auto;
+}
+/* ***  *** */
+
+.img {
+
+     border-radius: 150px 20px 80px 55px;
+}

@@ -1,0 +1,109 @@
+body {background-color: #EAEAEA;
+	width: 100%;
+	font-family: calibri, "times new romam", times, "serif";  
+	margin: 0px; 
+
+}
+
+a	{	border: 0px;
+	padding: 10px;
+	color: #FFF;
+}
+
+a:link {text-decoration: none;
+	color: #FFF;
+
+}
+
+a:hover {text-decoration: none;
+	color: #FFCC00; 
+	background: #FFF;
+
+}
+
+#titulo {font-size: 43px;
+	font-weight: bold;  
+	padding: 10px 600px;
+	padding-top: 35px;
+
+} 
+
+#linkcomum {color: #FFCC00;
+padding: 0px;}
+
+.cabecalho {background: #FFCC00;
+
+}
+
+
+.clear {clear: both;
+
+}
+
+.link { font-weight: bold;
+	width: 800px;
+	padding-left: 450px;
+	padding-bottom: 20px
+
+}
+
+.principal {padding: 20px 150px
+
+}
+
+.conteudo_principal {background: #FFF;
+	width: 680px;
+	border: 1px solid #E3E3E3;
+	float: left;
+	padding: 15px;
+
+}
+
+.p_title {color: #FFCC00;
+	font-weight: bold;
+	padding-bottom: 0px;
+	font-size: 30px;
+
+}
+
+.p_subtitle {font-size: 13px;
+	padding-bottom: 14px;
+
+}
+
+.janelas_secundarias {background: #FFF;
+	width: 200px;
+	border: 1px solid #E3E3E3;
+	float:left;
+	padding: 5px;
+	margin: 0px 17px;
+	margin-bottom: 17px;
+	font-size: 14px;
+
+}
+
+.janelas_secundarias2 {background: #FFF;
+	width: 200px;
+	border: 1px solid #E3E3E3;
+	float:left;
+	padding: 5px;
+	margin: 0px 17px;
+	margin-bottom: 17px;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.cabecalho_dvs_secudarias {background: #ACABAB;
+color: #595858;
+padding:5px;
+font-size:20px;
+font-weight: bold;
+
+}
+
+.rodape {background: #ACABAB;
+	widht:100%;
+	padding: 10px 400px
+	
+}

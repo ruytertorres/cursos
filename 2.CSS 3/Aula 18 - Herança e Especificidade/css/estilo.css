@@ -1,0 +1,52 @@
+body {
+	color : #a12;
+	border:1px solid blue;
+	background: #123;
+}
+
+.page {
+
+	background: #fff;
+	padding: 10px;
+	float: left;
+}
+
+p {
+
+	color: green !important;
+}
+
+p {
+
+	color: blue;
+}
+
+img {
+
+	border:10px solid #123;
+	margin-top: 10px;
+}
+
+/*
+*** Ordem de Especificidades CSS***
+ */
+
+*{ /*4*/
+
+	color: #a12;
+}
+
+h2 { /*3*/
+	color: green;
+	text-align: center;
+}
+
+h2.blue { /*2*/
+	color: blue;
+	text-align: center;
+}	
+
+h2#red { /*1*/
+	color: red;
+	text-align: center;
+}

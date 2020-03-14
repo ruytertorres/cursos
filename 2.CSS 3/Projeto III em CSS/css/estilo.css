@@ -1,0 +1,278 @@
+* {
+
+     margin:0;
+     padding:0;
+}
+
+body {
+
+     font-family: "Trebuchet MS", Helvetica, sans-serif;
+     background: #fff url('../img/fundo.png') repeat-x;
+}
+
+#container {
+
+     width: 750px;
+     margin:0 auto;
+}
+
+#topo {
+
+     height:150px;
+     background: url('../img/detalhe-topo.png') no-repeat right top;
+     padding-top: 25px;
+
+}
+
+ul {
+
+     margin:0;
+     padding:0;
+     list-style:none;
+}
+
+#topo ul {
+
+     background: #b10333;
+     margin-top: 30px;
+     float:left;
+}
+
+#topo ul li {
+
+     float: left;
+}
+
+#topo ul a {
+
+     font-size:0.9em;
+     display: block;
+     padding: 0.5em 1.5em;
+     line-height: 2.1em;
+     text-decoration: none;
+     color:#fff;
+     background: url('../img/divisor.png') no-repeat left center;
+}
+
+#topo ul #primeiro a {
+
+     background:none;
+}
+
+#topo ul a:hover {
+
+     color: #69001d;
+}
+
+body.home #navbar a#home,
+body.brasil #navbar a#brasil,
+body.internacional #navbar a#internacional,
+body.economia #navbar a#economia,
+body.saude #navbar a#saude,
+body.ciencia #navbar a#ciencia,
+body.fotos #navbar a#fotos {
+
+     color: #fff;
+     background: #de003e;
+     cursor: text;
+}
+
+#conteudo {
+
+     background: #a1a1a1;
+     margin-top: 60px;
+}
+
+#lateral {
+
+     width: 180px;
+     float: left;
+     margin: 0 0 20px -750px;
+}
+
+#primario {
+
+     width: 270px;
+     float: left;
+     margin: 0 0 20px 195px;
+}
+
+#secundario {
+
+     width: 270px;
+     margin: 0 0 20px 15px;
+     float: left;
+}
+
+#uma_coluna #primario {
+
+     width: 750px;
+     float: left;
+     margin:0 auto;
+     margin-bottom:20px;
+}
+
+#duas_colunas #primario {
+
+     width: 555px;
+     float: left;
+     margin: 0 0 20px 195px;
+}
+
+.box {
+
+     background: #f3f3f3 url('../img/fundo-caixa.png');
+     margin: 10px 0;
+     padding: 5px;
+}
+
+.conteudobox {
+
+     padding:5px;
+     background: #fff;
+     margin-top: 5px;
+
+}
+
+h2 {
+
+     font-size: 1em;
+     background: #294c71;
+     color:#fff;
+     padding-left: 5px;
+}
+
+.destaque h3 {
+
+     letter-spacing: 3px;
+     font-size: 0.95em;
+}
+
+h3 {
+
+     text-transform : uppercase;
+     display: inline;
+     font-size: 0.8em;
+     padding:3px;
+     color: #fff;
+     background: #b10333;
+
+}
+
+#newslist li a h4 {
+
+     padding: 4px 0;
+     font-size: 0.8em;
+     color:#3e7ab9;
+}
+
+a:link, a:visited {
+
+     color: #b10333;
+     padding: 2px;
+}
+
+a:hover {
+
+     color:#e50040;
+}
+
+#lateral ul a {
+
+     font-size: 0.9em;
+     padding:3px;
+     color: #000;
+     display: block;
+     line-height:30px;
+     text-decoration: none;
+     border-bottom:1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+     color: #a1a1a1;
+     background:#f9f9f9 url('../img/marcador.png') no-repeat left center;
+     padding-left: 20px;
+}
+
+img {
+
+     border: 2px solid #dfdfdf;
+}
+
+img.imgprincipal {
+
+     width: 98%;
+     border: 3px solid #b10333;
+}
+
+#topo img {
+
+     border:none;
+}
+
+#newslist li {
+
+     padding: 2px;
+     border-bottom: 1px solid #ccc;
+     height: 65px;
+}
+
+#newslist li:hover {
+
+     background: #ccc;
+     cursor: pointer;
+}
+
+#newslist li a img {
+
+     float: left;
+     margin: 5px;
+
+}
+
+#newslist li a {
+
+     text-decoration:none;
+}
+
+#newslist li a p {
+
+     font-size: 0.66em;
+     color: #000
+}
+
+label {
+
+     display: block;
+     cursor: pointer;
+}
+
+input {
+
+     font-size:0.9em;
+     background-color:#fff;
+     padding: 5px;
+     width: 125px;
+}
+
+input.submit {
+
+     width: 80px;
+     color:#fff;
+     background-color: #b10333;
+     border: 2px solid #870529;
+}
+
+#container_rodape {
+
+     clear:both;
+     background:#294c71;
+     padding:20px;
+}
+
+#rodape {
+
+     width: 720px;
+     margin: 0 auto;
+     color: #fff
+}

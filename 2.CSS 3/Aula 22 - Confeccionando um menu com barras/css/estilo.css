@@ -1,0 +1,100 @@
+* {
+
+     padding: 0;
+     margin: 0;
+}
+
+body {
+
+     background: url('../img/6a1234bc4aa9b47b4a3be43ced77c441.jpg');
+     margin: 30px;
+     font-family: 'Trebuche MS', Helvetica, sans-serif;
+}
+
+#cbc {
+
+     background: #fff;
+     border: 3px solid yellow;
+}
+
+h2 {
+
+     padding-bottom: 15px;
+     color: #ffae00;
+     text-align: center;
+}
+
+ul {
+
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     width: 720px;
+}
+
+ul li {
+     float: left;
+     background: url('../img/aba-direita.png') no-repeat top right; 
+}
+
+ul a {
+
+     display: block;
+     padding: 0 2em;
+     line-height: 3em;
+     text-decoration: none;
+     background: url('../img/aba-esquerda.png') no-repeat top left;
+     color:#fff;
+}
+
+ul a:hover {
+
+     color: #89441f;
+}
+
+ul #atual {
+
+          background: url('../img/aba-direita-atual.png') no-repeat top right;
+
+}
+
+ul #atual a {
+
+     background: url('../img/aba-esquerda-atual.png') no-repeat top left;
+
+}
+
+#home #area_menu #navegacao .home a,
+#series #area_menu #navegacao .series a,
+#filmes #area_menu #navegacao .filmes a {
+
+
+}
+
+#clear {
+
+     clear: both;
+}
+
+#principal {
+
+     width: 720px;
+     background: #ffffffa2;
+     margin-top: 20px;
+     border: 3px solid yellow;
+
+}
+
+h3 {
+
+     color: #ffae00;
+     text-align: center;
+     padding: 15px;
+     font-size: 2em;
+     text-decoration: underline;
+}
+
+p {
+
+     padding: 10px;
+}

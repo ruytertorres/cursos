@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Longin</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<table border="4" width="100%">
+ 			<tr>
+				<td width="14,28%"><strong> <a href="projeto.html">Projeto</a> </strong></td>
+				<td width="14,28%"><strong> <a href="index.html">Pagina Principal</a></strong></td>
+				<td width="14,28%"><strong> <a href="contato.html">Contato</a></strong></td>
+ 				<td width="14,28%"><strong> <a href="sobre nos.html">Sobre a Empresa</a>
+				</strong></td>
+ 				<td width="14,28%"><strong> <a href="mapa.html">Mapa do Site</a>
+				</strong></td>
+				<td width="14,28%"><strong> <a href="http://www.google.com.br">Google</a>
+				</strong> </td>
+			</tr>	
+		</table>
+	 <hr>
+	 	<h1>Longin</h1>
+	 	<!-- a tag "imput" e seus atribustos:
+	 		type = tipo de formatação que sera utilizado na tag "text" para  texto; "passaword" para senha; "button" para criar um botão; "submit" para enviar o formulario digitado pelo cliente; -->
+	 		<form action="">
+	 			E-mail:<br>
+	 			<input type="text" name="LoginTest"><br>
+	 			Senha: <br>
+	 			<input type="password" name="senha"><br>
+	 			<input type="submit" value="Logar">
+	 		</form><br>
+	 		<h3>Cadastre-se</h3><br>
+			<form>
+	 			E-mail:<br>
+				<input type="text" name="LoginTest"> <br><br> 
+				
+				Sexo: <br>
+				<input type="radio" name="sexo" value="M"> Masculino
+				<input type="radio" name="sexo" value="F"> Feminino
+				<input type="radio" name="sexo" value="x"> Outro <br><br>
+
+				<H3>Interesses</H3><br>
+				<input type="checkbox" name="interesses"> Futebol <br>
+				<input type="checkbox" name="interesses"> Moda <br>
+				<input type="checkbox" name="interesses"> Cursos <br><br>
+
+				<h3>Estado</h3> <br>
+				<!-- para recuperar os dados usando PHP é importante observar os atributos Name e value -->
+				<select name="estado">
+					<option value="mg">MG</option>
+					<option value="sp">SP</option>
+					<option value="rs">RS</option>
+				</select><br><br>
+
+				<h3>Observações:</h3> <br>
+				<textarea></textarea><br><br>
+
+
+			<input type="submit" value="Cadastrar">
+
+
+	 		</form>
+</body>
+</html>

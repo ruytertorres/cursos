@@ -1,0 +1,20 @@
+body {background-color: #D1D1D1;}
+
+.conteudo1 {background-color: #fff;
+	border: 1px solid blue;
+	width: 200px; height: 200px;
+	position: absolute; z-index: 12; }
+
+.conteudo2 {background: #79DF9F;
+	border: 1px solid #AD1010;
+	width: 200px; height: 200px;
+	position: absolute;
+top: 80px; left: 80px;
+z-index: 1; }
+
+.conteudo3 {background: yellow;
+	border: 1px solid white;
+	width: 200px; height: 200px;
+	position: absolute;
+top: 160px; left: 160px;
+z-index: 0; }

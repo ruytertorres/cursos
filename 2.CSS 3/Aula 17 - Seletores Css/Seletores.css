@@ -1,0 +1,121 @@
+/*
+***Seletor Universal***
+ */
+
+* {
+
+	margin: 0px;
+	font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+}
+
+/*
+***Seletor de Texto***
+ */
+
+h1 {
+
+	color: #a12;
+}
+
+h2 {
+
+	color: #a21;
+}
+
+h3 {
+
+	color: blue;
+}
+
+/*
+***Seletor de classe***
+ */
+
+.verde {
+
+	background: green;
+}
+
+.circular {
+
+	border: 5px solid green;
+	border-radius: 5px;
+}
+
+/*
+***Seletor de ID***
+ */
+
+#cabeçalho {
+
+	background: #fff;
+	color: #a12;
+	width: 1346px;
+	height: 150px
+}
+
+#principal {
+
+	background: #fff;
+	width: 920px;
+	margin: auto;
+}
+
+/*
+***Seletor de filho***
+ */
+
+ul>li {
+
+	color: #a12;
+	text-decoration: none;
+	padding: 10px;
+}
+
+div>h1 {
+
+	border: 1px color #a12;
+}
+
+/*
+*** Seletor de Descendente***
+ */
+
+div a:link, div a:visited {
+
+	color: green;
+	padding: none;
+}
+
+div span {
+
+	font-style: italic;
+}
+
+/*
+***Seletor de Irmão Adjacente ***
+ */
+
+h2+p {
+
+	color: #blue;
+}
+
+title+p {
+
+	font-weight: bold;
+}
+
+/*
+***Seletor de Irmão Geral***
+ */
+
+h2~p {
+
+	color: orange;
+}
+
+p~a {
+
+	border: 1px solid orange;
+}

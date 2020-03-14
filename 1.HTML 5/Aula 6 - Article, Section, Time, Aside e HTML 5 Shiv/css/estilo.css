@@ -1,0 +1,154 @@
+* {
+
+     margin:0;
+     padding:0;
+}
+
+header {
+
+     background:rgba(29, 11, 71, 0.459);
+     width:100%;
+     border: 2px solid rgba(29, 11, 71, 0.459);
+     margin-bottom: 10px;
+     text-align: center;
+     color:#fff
+}
+
+header:hover {
+
+     background: rgba(29, 11, 71, 0.459);
+     color:#fff;
+     text-shadow: 0 0 5px rgba(255, 255, 255, 0.363),
+     0 0 10px rgba(238, 255, 0, 0.596);
+
+     border: 2px solid rgba(0, 68, 255, 0.801);
+}
+
+#logo {
+
+     margin-bottom: 20px;
+}
+
+nav ul {
+
+     list-style: none;
+     margin-bottom: 20px;
+}
+
+nav ul li {
+
+     display: inline;
+
+}
+
+nav li a:link, nav li a:visited {
+
+     padding: 0 20px;
+     background: #a12;
+     color:#fff;
+     text-decoration: none;
+}
+
+nav li a:hover {
+
+     background: rgb(136, 255, 0);
+     color:#000;
+}
+
+#container {
+
+     text-align: center;
+     background: rgba(83, 255, 106, 0.418);
+     padding: 15px;
+     
+}
+
+article {
+     
+     padding: 10px;
+     float: right;
+     width: 65%;
+     background: rgba(251, 255, 0, 0.075);
+}
+
+time {
+     
+     color: rgb(10,0,250);
+}
+
+#data {
+
+     margin: 0;
+     margin-top: 5px;
+     padding:5px;
+     float: right;
+     font-size:0.8em;
+}
+
+section#tituldois {
+     
+     box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.698), 5px -5px 5px rgba(166, 255, 255, 0.2) inset;
+     color: rgb(255,100,0);
+     padding: 10px;
+}
+
+section#conteudo {
+     
+     border:none;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.698), 5px 5px 5px rgba(166, 255, 255, 0.2) inset;
+}
+
+section {
+     
+     margin: 10px auto;
+}
+
+#conteudo {
+
+     border: 2px solid #ffffff99;
+     padding: 10px;
+}
+
+aside {
+
+     float:left;
+     width:30%;
+     padding: 1%;
+     background: rgba(251, 255, 0, 0.075);
+}
+
+#lateral h2 {
+
+     box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.698),
+     5px -5px 5px rgba(166, 255, 255, 0.2) inset;
+     color: rgb(255, 100, 0);
+}
+
+#lateral section {
+
+     border:none;
+     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.698),
+     5px 5px 5px rgba(166, 255, 255, 0.2) inset;
+}
+
+#lateral textarea {
+
+     margin: 10px auto;
+     width: 90%;
+     text-align:center;
+     padding: 5px;
+}
+
+.clear {
+     
+     clear: both;
+}
+
+footer {
+
+     background: #a12;
+     text-align: center;
+     padding: 5px 15px;
+     color:#fff;
+     clear:both;
+}

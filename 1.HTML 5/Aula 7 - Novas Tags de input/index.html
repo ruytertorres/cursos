@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Novas Tags Input</title>
+     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+     <link rel="icon" href="favicon.ico" type="image/png" sizes="32x32">
+</head>
+
+<body>
+     <header>
+          <h1>Algumas da novas tags de input do HTML 5</h1>
+
+          <section>Muitos browser's tem suporte para esse recursos ainda mesmo na versão mais nova 16/11/2019 </section>
+
+          <!--  a Aurora ta dormindo do meu lado no sofá, e o emanuel ta assistindo desenho no quarto, eles estão com 2 e 3 anos e meio e a gente ainda mora no Jari-RS na rua do banri, no beco - 20:07 - -->
+
+          <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../Aula 5 - Header, Nav Footer/index.html">Header, Nav e Footer</a>
+                    </li>
+                    <li><a href="../Aula 6 - Article, Section, Time, Aside e HTML 5 Shiv/index.html">Article, Section, Time Aside e HTML 5 Shiv</a></li>
+               </ul>
+          </nav>
+     </header>
+
+     <div id="container">
+          <div class="conteudo">
+               <form action="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" autofocus><br><br>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required><br><br>
+                    
+                    <!-- nas tag acima temos 3 novas propriedades, a primeira delas é o (type="email"), que define que o input (a caixa de digitar), é exclusivmente para um e-mail.
+                    
+                    no segundo recurso temos o atributo REQUIRED que impossibilita o avançar do formulario sem o preenchimento do campo onde esse atributo estiver configurado
+               
+                    O terceiro atributo é o AUTOFOCUS que como o nome sujere, foca o ponteiro do cursor exatamente no formulario em que ele estiver configurado-->
+
+                    <label for="number">Idade:</label>
+                    <input type="number" name="number" id="number" min="14" max="55" step="18" required><br><br>
+
+                    <!-- apesar de não ter funcionado no firefox, esses a atributos number deveria fazer com que a caixa de texto/input so pudesse digitar numeros.
+
+                    o atributo MIN define um numero minimo a ser preenchido enquento o MAX define o maximo.imgprincipal
+                    o atributo STEP faz com que a ordem numerica pule de acordo com o valor definido -->
+
+                    <label for="url">Site:</label>
+                    <input type="url" name="url" id="url" placeholder="http://www.exemple.com"><br><br>
+                    
+                    <!-- A tag (type="url"), que define que o input (a caixa de digitar), é exclusivmente para um URL. -->
+
+                    <label for="pesquisa">Pesquisa:</label>
+                    <input type="search" name="pesquisa" id="pesquisa"><br><br>
+
+                    <label for="range">Mova:</label>
+                    <input type="range" id="range" min="0" max="100" value="20"><br><br>
+
+                    <label for="date">Idade:</label>
+                    <input type="date" name="date" id="date"><br><br>
+
+                    <label for="cor">Cor Favorita:</label>
+                    <input type="color" name="color" id="color"><br><br>
+
+                    <input type="submit" name="" value="Enviar">
+               </form>
+          </div>
+     </div>
+     <footer>
+          <div class="conteudo">Todos os Direitos semi reservados</div>
+     </footer>
+
+
+
+
+</body>
+
+</html>

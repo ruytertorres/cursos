@@ -1,0 +1,23 @@
+.marcador {
+     background: #fe9d9d;
+     border: 1px solid #f94646;
+}
+
+.marcador-container {
+     background: #5bf946;
+     border: 1px solid #36ae26
+}
+
+.marcador-topo {
+     background: #abab11;
+     border: 1px solid #acac99;
+}
+
+.marcador-area {
+     background: #31ba99;
+     border: 1px solid #51ab;
+}
+
+.espacamento {
+     height: 100px;
+}

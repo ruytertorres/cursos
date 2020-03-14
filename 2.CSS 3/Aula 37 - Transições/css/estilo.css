@@ -1,0 +1,48 @@
+* {
+
+     margin:0;
+     padding:0;
+}   
+
+/*  */
+/* *** LEMBRAR DE COLOCAR AS EXTENSÕES PARA OS NAVEGADORES ANTIGOS EM TODAS AS DIRETIZES ENVOLVENTES DA ANIMAÇÃO CSS
+
+-O- -MOZ- -WEBKIT-
+
+*** */
+/*  */
+
+/* *** Animações *** */
+
+h1 {
+
+     background: rgba(238, 255, 0, 0.37);
+     box-shadow: 0 0 5px #abba00, 0 0 10px #aa1221;
+     display: inline-flex;
+     margin: 20px;
+     padding: 0 10px;
+}
+
+.box {
+
+     width: 40px;
+     height: 80px;
+     margin:20px;
+     background: #a12;
+     border-radius: 200px;
+     position:relative;
+     transition:width 2s,
+     background 2s;
+     /* transition: all 4s */
+     /* lembrar de colocar os prefixos para navegadores antigos */
+     transition-timing-function: linear;
+     
+}
+
+
+.box:hover {
+
+     width: 200px;
+     background: #ff6600;
+
+}
