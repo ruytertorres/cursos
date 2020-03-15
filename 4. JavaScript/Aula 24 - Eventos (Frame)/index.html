@@ -16,37 +16,37 @@
      <!-- HTML 5 SHIV -->
      <script src="js/html5shiv.js"></script>
      <!-- Tiulo da Page -->
-     <title>Evento Teclado</title>
+     <title>Evento Frame</title>
+
+     <script src="js/scriptone.js"></script><!--//script -->
 </head>
 
-<body>
+<body onresize="acao()">
      <!-- Inicio container -->
      <div class="container">
           <!-- inicio Cabecalho -->
           <header>
-               <a href="page2.html" class="btn btn-block btn-primary btn-radius">Ex.: II - como aproveitar melhor as variaveis de forma que elas não precisem de tanto código pra realizar suas funções</a>
+               <a href="page2.html" class="btn btn-block btn-primary btn-radius">Ex.: II ONSCROLL</a>
           <!--//Fim Cabecalho -->
           </header>
           <!-- Inicio Conteudo Principal -->
           <article>
-               <h1 class="text-primary">Curso de JavaScript, Aula XXIII - Evento Teclado</h1>
+               <h1 class="text-primary">Curso de JavaScript, Aula XXIV - Evento Frame</h1>
 
-               <section class="">
+               <!-- <section class="">
                     <div class="container">
-                         <!-- <div class="row justify-content-between"> -->
-                              <!-- <div class="bg-secondary col-md-4" onclick="acao()">
+                         <div class="row justify-content-between">
+                              <div class="bg-secondary col-md-2" onclick="acao()">
                                    <h3 class="text-white">onclick</h3>
                                    <p>1 clique</p>
-                              </div> -->
-                              <input type="text" onkeydown="acao()" placeholder="onkeydown">
-                              <br> <br>
-                              <input type="text" onkeypress="acao(onkeypress)" placeholder="onkeypress">
-                              <br> <br>
-                              <input type="text" onkeyup="acao(onkeypress)" placeholder="onkeyup">
-                         <!-- </div> -->
+                              </div>
+                              <div class="bg-success col-md-2" ondblclick="acao()">
+                                   <h3 class="text-white">ondblclick</h3>
+                                   <p>2 cliques</p>
+                              </div>
+                         </div>
                     </div>
-                    <script src="js/scriptone.js"></script><!--//script -->
-               </section>
+               </section> -->
 
                <!--//Fim conteudo Principal -->
           </article>
