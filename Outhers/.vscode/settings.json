@@ -1,0 +1,8 @@
+{
+     "editor.fontFamily": "\"fira code\" , \"fira code light\", \"anonymous pro\"",
+     "editor.tabSize": 5,
+     "scm.alwaysShowActions": true,
+     "editor.minimap.showSlider": "always",
+     "liveServer.settings.port": 5501,
+     "git.ignoreLimitWarning": true
+}
