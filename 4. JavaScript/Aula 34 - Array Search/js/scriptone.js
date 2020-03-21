@@ -1,5 +1,49 @@
-/// array basico
+// Array - Metodo de Pesquisa
 
+var melhoresPdeNaruto = Array()
+
+melhoresPdeNaruto[1] = 'Himawari'
+melhoresPdeNaruto[2] = 'Hinata'
+melhoresPdeNaruto[3] = 'Naruto'
+melhoresPdeNaruto[4] = 'Kaguya'
+melhoresPdeNaruto[5] = 'Sarada'
+melhoresPdeNaruto[6] = 'Sasuske'
+melhoresPdeNaruto[7] = 'Jiraya'
+melhoresPdeNaruto[8] = 'Itachi'
+melhoresPdeNaruto[9] = 'Kakashi'
+melhoresPdeNaruto[10] = 'Mitsuki'
+
+console.log(melhoresPdeNaruto)
+
+console.log(melhoresPdeNaruto.indexOf('Kaguya'))
+
+var pesquisa = melhoresPdeNaruto.indexOf('Sarada')
+
+if(pesquisa === -1){
+    console.log('O item não existe.')
+} else {
+    console.log('O item indicado está na linha ' + pesquisa)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var melhoresPdeNaruto = Array()
 
 melhoresPdeNaruto[1] = 'Himawari'
@@ -62,3 +106,4 @@ listasDeNaruto['personagens'] = Array()
 
     console.log(listasDeNaruto)
     document.write(listasDeNaruto['personagens'][2] + ' - ' + listasDeNaruto['naturezaChakra'][2])
+*/

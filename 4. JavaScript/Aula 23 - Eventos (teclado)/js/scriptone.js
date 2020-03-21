@@ -1,4 +1,4 @@
-// Evento Mouse
+// Evento Teclado
 
 function acao(){
     alert('Teste bem sucedido!!!')
