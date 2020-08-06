@@ -16,7 +16,7 @@
      <!-- HTML 5 SHIV -->
      <script src="js/html5shiv.js"></script>
      <!-- Tiulo da Page -->
-     <title>Tratamento de Erros</title>
+     <title>BOM</title>
 </head>
 
 <body>
@@ -29,10 +29,20 @@
           </header>
           <!-- Inicio Conteudo Principal -->
           <article>
-               <h1 class="text-primary">Curso de JavaScript, Aula XLVI - Tratamento de Erros</h1>
+               <h1 class="text-primary">Curso de JavaScript, Aula XLVII - BOM</h1>
 
-               <section class="">
-                    <h5></h5>
+               <section class="mt-4">
+                    <div class="border rounded px-3 pt-3 bg-primary text-light">
+                         <p><strong>DOM </strong> Document Object Model - é a API que define basicamente a árvore de um documento HTML, que começa com sua TAG Pai, que encapsula as demais</p>
+                         <p><strong>BOM </strong> Browser Object Model - é a API que permite o acesso via JS a recursos do Browser, como histórico, cokkies, etc </p>
+                    </div>
+               </section>
+               <section class="mt-4">
+                    <div class="">
+                         <button class="btn btn-outline-primary" onclick="openPopUp()">Open</button>
+                         <button class="btn btn-outline-primary" onclick="closePopUp()">Close</button>
+                         <button class="btn btn-outline-primary" onclick="window.print()">Imprimir</button>
+                    </div>
                </section>
                
                <script src="js/scriptone.js"></script><!--//script -->
