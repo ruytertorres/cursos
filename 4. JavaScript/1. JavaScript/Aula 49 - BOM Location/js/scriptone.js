@@ -2,4 +2,4 @@
 
 //consultar documentação w3School
 
-let 
+// window.location.href="http://www.google.com.br"

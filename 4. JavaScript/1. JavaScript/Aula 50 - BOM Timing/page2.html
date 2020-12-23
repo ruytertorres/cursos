@@ -16,42 +16,37 @@
      <!-- HTML 5 SHIV -->
      <script src="js/html5shiv.js"></script>
      <!-- Tiulo da Page -->
-     <title>Operadores Aritimeticos</title>
+     <title>Manipulando Elelmentos da Pagina</title>
 </head>
 
-<body>
+<body onscroll="acao()">
      <!-- Inicio container -->
      <div class="container">
           <!-- inicio Cabecalho -->
           <header>
-               <a href="page2.html" class="btn btn-block btn-primary btn-radius">Ex.: II - como aproveitar melhor as variaveis de forma que elas não precisem de tanto código pra realizar suas funções</a>
-          <!--//Fim Cabecalho -->
+               <a href="index.html" class="btn btn-block btn-outline-warning btn-radius">Exemplos Teoricos</a>
+               <h1 class="text-primary">Curso de JavaScript, Aula XXVI - DOM - Manipulandos Elementos da página</h1>
+               <!--//Fim Cabecalho -->
           </header>
           <!-- Inicio Conteudo Principal -->
           <article>
-               <h1 class="text-primary">Curso de JavaScript, Aula XIII - Operadores Aritiméticos</h1>
-               <div><!-- script -->
-                    <script src="js/scriptone.js">
-                    </script><!--//script -->
-               </div>
-               <section>
-                    <h3 class="text-info">Precedencia de Execução das Operações aritiméticas</h3>
-                    <p></p>
-                    <div>
-                         <script>
-                              var n1 = 12
-                              document.write(12 + 3 / 24 * 7 + '<br>')
-
-                              document.write(12 + (3 * 2 - (5 / 24)) * (7 + 13 *2))
-
-                              // Assim como na matematica, a prioridade de execução do códico no caso de uma operação aritimética, sempre vai dá prioridade aos parentesis primeiro até que todos os paretesis sejam eliminados, e então as prioridades serão multiplicação e divisão e por fim adição e sutração
-                              // quando não tem parentesis envolvido, assim como na matematica, primeiro o browser vai dar prioridade para resolver as multiplicações e divisão e depois as adições e subtrações
-
-                         </script>
+               <div>
+                    <input onkeyup="distribuirCaracter()" id="entrada" style="width:50%;" type="text" placeholder="Digite um texto misto em números e letras">
+               </div> <br> <br>
+               <div class="row justify-content-between">
+                    <div class="col-md-6">
+                         <h4>Letras:</h4>
+                         <input disabled="disabled" type="text" id="letras">
                     </div>
-               </section>
+                    <div class="col-md-6">
+                         <h4>Números:</h4>
+                         <input disabled="disabled" type="text" id="numeros">
+                    </div>
+               </div>
 
-               <!--//Fim conteudo Principal -->
+               <!-- JS scriptone-->
+               <script src="js/scriptone.js"></script>
+          <!--//Fim conteudo Principal -->
           </article>
           <!-- Inicio Footer -->
           <footer>
