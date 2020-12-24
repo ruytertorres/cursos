@@ -1,11 +1,13 @@
-.modifica-cor-y{
-    background:#ffff003b;
+/* *** container *** */
+
+#containerPrincipal {
+    margin: 0;
+    padding:0 ;
 }
 
-.modifica-cor-r{
-    background:#ff00003b;
-}
+/* *** mosquito *** */
 
-.modifica-cor-v{
-    background:#00ff003b;
+.mosquito1 {
+    width: 50px;
+    height: 50px;
 }
