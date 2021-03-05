@@ -21,8 +21,18 @@
      <title>Mata Mosquito</title>
 </head>
 <body onresize="ajustaTamanhoPalcoJogo()">
+     <div class="painel">
+          <div class="lifes">
+               <img id="l1" src="img/coracao_cheio.png" alt="">
+               <img id="l2" src="img/coracao_cheio.png" alt="">
+               <img id="l3" src="img/coracao_cheio.png" alt="">
+          </div>
+          <div class="cronometro">Tempo Restante: ?</div>
+     </div>
      <script>
-          positionMoscaRandom()
+          setInterval(function(){
+                         positionMoscaRandom()
+                    }, 2000)
      </script>
  
      <!-- ===================================================================================================-->
