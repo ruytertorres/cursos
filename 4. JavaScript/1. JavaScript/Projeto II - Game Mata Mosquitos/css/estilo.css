@@ -1,8 +1,13 @@
+html {
+    cursor: url(../img/mata_mosca.png) 30 30, auto;
+}
+
 /* *** container *** */
 
 body {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #containerPrincipal {
@@ -14,7 +19,7 @@ body {
 
 .painel{
     position: absolute;
-    width:200px;
+    width:220px;
     padding:10px;
     bottom:0px;
     left:0px;
