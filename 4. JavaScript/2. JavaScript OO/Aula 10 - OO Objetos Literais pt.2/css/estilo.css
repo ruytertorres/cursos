@@ -1,0 +1,35 @@
+body, html ,div#container{
+    height:100%;
+    position:relative;
+}
+
+body {
+    background:#ffaaaa;
+}
+
+#box-form{
+    width:62%;
+    background:rgba(255, 255, 255, 0.6);
+    padding: 3%;
+    border-radius: 1.5em;
+    border: 2px solid #6c757d;
+    display: block;
+}
+
+#divInputEspecial>.inputEspecial{
+    display: inline;
+    width:48%;
+}
+
+#divInputEspecial2>.btn-especial {
+    display: block;
+    width:100%;
+}
+
+.max-width{
+    width:100%;
+}
+
+.text{
+    color:#6c757d;
+}
