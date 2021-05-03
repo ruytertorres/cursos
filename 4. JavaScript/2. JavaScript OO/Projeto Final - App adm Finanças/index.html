@@ -72,7 +72,7 @@
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <input type="text" class="form-control" placeholder="Dia" id="dia" />
+                    <input type="number" class="form-control" placeholder="Dia" id="dia" />
                 </div>
                 <div class="col-md-6">
                     <select class="form-control" id="tipo">
@@ -90,7 +90,7 @@
                     <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
                 </div>
                 <div class="col-md-2">
-                    <input type="text" class="form-control" placeholder="Valor" id="valor" />
+                    <input type="number" class="form-control" placeholder="Valor" id="valor" />
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
                     <button type="button" class="btn btn-primary" onclick="cadastrarDespesas()">
@@ -102,37 +102,21 @@
             <div class="modal fade" id="resgistrarDespesa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header text-danger">
-                            <h5 class="modal-title" id="exampleModalLabel">Erro na Gravação</h5>
+                        <div id="cor-texto">
+                            <h5 class="modal-title" id="modalTitle"></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <span>existem campos obrigatórios que não foram preenchidos</span>
+                        <div id="excluiEmSuccess" class="modal-body">
+                            <span id="modificaTextPopUp"></span>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Voltar</button>
+                            <button id="btn-modal" type="button" data-bs-dismiss="modal"></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal Success
-            <div class="modal fade" id="sucessoNaGravacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header text-success">
-                            <h5 class="modal-title" id="exampleModalLabel">Sucesso na Gravação</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <span>Os dados foram gravados com sucesso</span>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Voltar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        </div>
+           
         <!-- ===================================================================================================-->
         <!-- Configurações do Bootstrap referente a JS -->
         <!-- JavaScript (Opcional) -->

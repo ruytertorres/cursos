@@ -36,7 +36,18 @@ class Despesas{
             }
             return true
         }
-        
+    }
+    somenteNumeros(e) {
+        var charCode = e.charCode ? e.charCode : e.keyCode;
+        // charCode 8 = backspace   
+        // charCode 9 = tab
+        if (charCode != 8 && charCode != 9) {
+            // charCode 48 equivale a 0   
+            // charCode 57 equivale a 9
+            if (charCode < 48 || charCode > 57) {
+                return false;
+            }
+        }
     }
 }
 class Bd{
@@ -76,9 +87,22 @@ function cadastrarDespesas(){ //função principal
 
     if(despesa.validarDados() && despesa.tratarDiaMes()){
         bd.gravar(despesa)
-        $('#resgistrarDespesa').modal('show')
+
+        document.getElementById('modalTitle').innerHTML= 'Resgistro inserido com sucesso' 
+        document.getElementById('cor-texto').className= 'modal-header text-success' // adicionar classe ao elemento HTML
+        document.getElementById('modificaTextPopUp').innerHTML = "As depesas foram devidamete cadastradas!"
+        document.getElementById('btn-modal').innerHTML='Seguir'
+        document.getElementById('btn-modal').className= 'btn btn-success'
+
+        $('#resgistrarDespesa').modal('show')   
         } else {
         $('#resgistrarDespesa').modal('show')
+
+        document.getElementById('modalTitle').innerHTML = "Erro na inclusão do registro"
+        document.getElementById('cor-texto').className= 'modal-header text-danger'
+        document.getElementById('modificaTextPopUp').innerHTML = "Verifique se todos os campos foram devidamente preenchidos!"
+        document.getElementById('btn-modal').innerHTML='Voltar'
+        document.getElementById('btn-modal').className= 'btn btn-danger'
     }
 }
 //atualizar com CTRL+F5 seta o cache
