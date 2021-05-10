@@ -1,4 +1,3 @@
-//Inserir alert para quando os dias estiverem errados e destacar a cor da janela
 class Despesas{
     constructor(ano,mes,dia,tipo,descricao,valor){
         this.ano = ano
@@ -66,6 +65,62 @@ class Bd{
         localStorage.setItem(id, JSON.stringify(d)) //transforma o dado recebido no constructor e tratado no getProxId, e o transforma em arquivo JSON
         localStorage.setItem('id', id)//atribui a o dado recebido a um novo item na pilha
     }
+    recuperarTodosRegistros(){
+
+        //array das despesas
+        let despesas = Array()
+
+        //atribui valor ao item listado em local storage
+        let id = localStorage.getItem('id')
+
+        //laço pra recuperar as depesas cadastradas em local storage
+        for(let i = 1; i <= id; i++){
+            //recuperar despesa
+            let despesa = JSON.parse(localStorage.getItem(i))
+
+            //tratar erro NULL
+            if(despesa === null){
+                continue // o metodo continue, dentro de uma laço de repetição, salta para o proximo item, aplicado nesse momento da aplicação faz com que a logica pule o objeto null e passe para o proximo, evitando a imprenção de um objeto null no array
+            }
+            //atribui um identificador a despesa
+            despesa.id=i
+            // inputa o objeto recuperado de local storage em um array
+            despesas.push(despesa)
+
+        }
+        return despesas
+    }
+    pesquisar(despesa){
+        let despesasFiltradas = Array()
+
+        despesasFiltradas = this.recuperarTodosRegistros()
+
+        //filtros
+        if(despesa.ano != ''){
+            console.log('ano')
+            despesasFiltradas = despesasFiltradas.filter(v => v.ano == despesa.ano)
+        }
+        if(despesa.mes != ''){
+            console.log('mes')
+            despesasFiltradas = despesasFiltradas.filter(v => v.mes == despesa.mes)
+        }
+        if(despesa.dia != ''){
+            despesasFiltradas = despesasFiltradas.filter(v => v.dia == despesa.dia)
+        }
+        if(despesa.tipo != ''){
+            despesasFiltradas = despesasFiltradas.filter(v => v.tipo == despesa.tipo)
+        }
+        if(despesa.descricao != ''){
+            despesasFiltradas = despesasFiltradas.filter(v => v.descricao == despesa.descricao)
+        }
+        if(despesa.valor != ''){
+            despesasFiltradas = despesasFiltradas.filter(v => v.valor == despesa.valor)
+        }
+        return despesasFiltradas
+    }
+    remover(id){
+        localStorage.removeItem(id)
+    }
 }
 var bd = new Bd() // variavel responsavel por gravar e instanciao os dados em local storage atraves da class Db
 function cadastrarDespesas(){ //função principal
@@ -94,7 +149,15 @@ function cadastrarDespesas(){ //função principal
         document.getElementById('btn-modal').innerHTML='Seguir'
         document.getElementById('btn-modal').className= 'btn btn-success'
 
-        $('#resgistrarDespesa').modal('show')   
+        $('#resgistrarDespesa').modal('show')
+        
+        //limpar campos
+        ano.value = ''
+        mes.value = ''
+        dia.value = ''
+        tipo.value = ''
+        descricao.value = ''
+        valor.value = ''
         } else {
         $('#resgistrarDespesa').modal('show')
 
@@ -105,4 +168,72 @@ function cadastrarDespesas(){ //função principal
         document.getElementById('btn-modal').className= 'btn btn-danger'
     }
 }
-//atualizar com CTRL+F5 seta o cache
+function carregarListaDespesa(despesas = Array(), filtro = false){
+    
+    if(despesas.length == 0 && filtro == false){
+        despesas = bd.recuperarTodosRegistros()
+    }
+
+
+    //selecionando o elemento tbody da tabela
+    let listaDespesas = document.getElementById('listaDespesas')
+    listaDespesas.innerHTML = ''
+
+    //percorrer o array de forma diamica
+    despesas.forEach(function(d){
+        //criando linha (tr)
+        let linha = listaDespesas.insertRow()
+
+        //criar colonas (td)
+
+        linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
+
+        //tratar tipo
+        switch(parseInt(d.tipo)){
+            case 1: d.tipo = 'Alimentação'
+                break
+            case 2: d.tipo = 'Educação'
+                break
+            case 3: d.tipo = 'Lazer'
+                break
+            case 4: d.tipo = 'Saúde'
+                break
+            case 5: d.tipo = 'Transporte'
+                break
+            case 6: d.tipo = 'Outros'
+                break
+        }
+        linha.insertCell(1).innerHTML = d.tipo
+
+
+        linha.insertCell(2).innerHTML = d.descricao
+        linha.insertCell(3).innerHTML = `$ ${d.valor}`
+
+        //botão de excluir
+        let btn = document.createElement("button")
+        btn.className = 'btn btn-danger'
+        btn.innerHTML = '<i class="far fa-trash-alt"></i>'
+        btn.id = `id_despesa${d.id}`
+        btn.onclick =function(){
+            let id = this.id.replace('id_despesa', '')
+            bd.remover(id)
+            window.location.reload()
+        }
+        linha.insertCell(4).append(btn)
+    })    
+}
+function pesquisarDespesa(){
+    let ano = document.getElementById('ano').value
+    let mes = document.getElementById('mes').value
+    let dia = document.getElementById('dia').value
+    let tipo = document.getElementById('tipo').value
+    let descricao = document.getElementById('descricao').value
+    let valor = document.getElementById('valor').value
+
+    let despesa = new Despesas(ano, mes, dia, tipo, descricao, valor)
+    
+    let despesas = bd.pesquisar(despesa)
+
+    carregarListaDespesa(despesas, true)
+}
+//atualizar com CTRL+F5 seta o cach

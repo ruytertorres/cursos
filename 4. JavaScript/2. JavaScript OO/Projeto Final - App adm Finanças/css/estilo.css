@@ -1,3 +1,12 @@
 .modal-header, .modal-footer{
     border:none;
 }
+
+#buttonPrincipal {
+    border: 2px solid;
+}
+
+#buttonPrincipal:hover {
+    color: #908700 ;
+    border: 2px solid;
+}
